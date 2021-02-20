@@ -10,9 +10,14 @@
 		1970CC39186745CD2D1427CB /* Pods_mentorz_clone_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA06192B8E060DC1D44C0D /* Pods_mentorz_clone_test.framework */; };
 		702AC49025E168CF004B21B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702AC48F25E168CF004B21B9 /* Assets.xcassets */; };
 		702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49225E17F7A004B21B9 /* ButtonView.swift */; };
+		702AC49725E18ABC004B21B9 /* UIView+Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49625E18ABC004B21B9 /* UIView+Borders.swift */; };
+		702AC49A25E18D6E004B21B9 /* SocialMediaButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49925E18D6E004B21B9 /* SocialMediaButtons.swift */; };
+		702AC49D25E18E67004B21B9 /* FacebookSocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49C25E18E67004B21B9 /* FacebookSocialMediaButton.swift */; };
+		702AC4A025E19113004B21B9 /* LinkedInSocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49F25E19113004B21B9 /* LinkedInSocialMediaButton.swift */; };
+		702AC4A325E19250004B21B9 /* AppleSocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC4A225E19250004B21B9 /* AppleSocialMediaButton.swift */; };
 		7042639A25E122EB007BD4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639925E122EB007BD4F4 /* AppDelegate.swift */; };
 		7042639C25E122EB007BD4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639B25E122EB007BD4F4 /* SceneDelegate.swift */; };
-		7042639E25E122EB007BD4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639D25E122EB007BD4F4 /* ViewController.swift */; };
+		7042639E25E122EB007BD4F4 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639D25E122EB007BD4F4 /* SplashViewController.swift */; };
 		704263A125E122EB007BD4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7042639F25E122EB007BD4F4 /* Main.storyboard */; };
 		704263A625E122EC007BD4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704263A425E122EC007BD4F4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,10 +27,15 @@
 		52AA06192B8E060DC1D44C0D /* Pods_mentorz_clone_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mentorz_clone_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		702AC48F25E168CF004B21B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		702AC49225E17F7A004B21B9 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		702AC49625E18ABC004B21B9 /* UIView+Borders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Borders.swift"; sourceTree = "<group>"; };
+		702AC49925E18D6E004B21B9 /* SocialMediaButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButtons.swift; sourceTree = "<group>"; };
+		702AC49C25E18E67004B21B9 /* FacebookSocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSocialMediaButton.swift; sourceTree = "<group>"; };
+		702AC49F25E19113004B21B9 /* LinkedInSocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInSocialMediaButton.swift; sourceTree = "<group>"; };
+		702AC4A225E19250004B21B9 /* AppleSocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSocialMediaButton.swift; sourceTree = "<group>"; };
 		7042639625E122EB007BD4F4 /* mentorz-clone-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mentorz-clone-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7042639925E122EB007BD4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7042639B25E122EB007BD4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7042639D25E122EB007BD4F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7042639D25E122EB007BD4F4 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		704263A025E122EB007BD4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		704263A525E122EC007BD4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		704263A725E122EC007BD4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +107,7 @@
 		704263B525E12ABB007BD4F4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				702AC49625E18ABC004B21B9 /* UIView+Borders.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -113,7 +124,7 @@
 		704263B725E12AF1007BD4F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7042639D25E122EB007BD4F4 /* ViewController.swift */,
+				7042639D25E122EB007BD4F4 /* SplashViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -130,6 +141,10 @@
 			isa = PBXGroup;
 			children = (
 				702AC49225E17F7A004B21B9 /* ButtonView.swift */,
+				702AC49925E18D6E004B21B9 /* SocialMediaButtons.swift */,
+				702AC49C25E18E67004B21B9 /* FacebookSocialMediaButton.swift */,
+				702AC49F25E19113004B21B9 /* LinkedInSocialMediaButton.swift */,
+				702AC4A225E19250004B21B9 /* AppleSocialMediaButton.swift */,
 			);
 			path = UIControllers;
 			sourceTree = "<group>";
@@ -258,10 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7042639E25E122EB007BD4F4 /* ViewController.swift in Sources */,
+				7042639E25E122EB007BD4F4 /* SplashViewController.swift in Sources */,
+				702AC49A25E18D6E004B21B9 /* SocialMediaButtons.swift in Sources */,
 				7042639A25E122EB007BD4F4 /* AppDelegate.swift in Sources */,
+				702AC49D25E18E67004B21B9 /* FacebookSocialMediaButton.swift in Sources */,
 				702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */,
 				7042639C25E122EB007BD4F4 /* SceneDelegate.swift in Sources */,
+				702AC4A325E19250004B21B9 /* AppleSocialMediaButton.swift in Sources */,
+				702AC49725E18ABC004B21B9 /* UIView+Borders.swift in Sources */,
+				702AC4A025E19113004B21B9 /* LinkedInSocialMediaButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
