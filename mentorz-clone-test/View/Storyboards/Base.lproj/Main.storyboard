@@ -42,7 +42,7 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuz-N7-FkS" customClass="ButtonView" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="550.5" width="382" height="40"/>
+                                <rect key="frame" x="16" y="550.5" width="382" height="87"/>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.18431372549019609" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <state key="normal" title="Sign up">
@@ -51,10 +51,10 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uro-T1-hPD" userLabel="or">
-                                <rect key="frame" x="16" y="614.5" width="382" height="20.5"/>
+                                <rect key="frame" x="16" y="661.5" width="382" height="20.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-Cz-bUn" userLabel="left">
-                                        <rect key="frame" x="0.0" y="10" width="136" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="10.5" width="136" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" id="gPt-Np-xgo"/>
@@ -68,7 +68,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGX-8p-Vbw" userLabel="right">
-                                        <rect key="frame" x="246.5" y="10" width="135.5" height="0.0"/>
+                                        <rect key="frame" x="246.5" y="10.5" width="135.5" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" id="HfI-u7-XKa"/>
@@ -89,7 +89,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Js-Ns-S2x">
-                                <rect key="frame" x="16" y="659" width="382" height="30"/>
+                                <rect key="frame" x="16" y="706" width="382" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kw-4f-08N" userLabel="facebook" customClass="FacebookSocialMediaButton" customModule="mentorz_clone_test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="122" height="30"/>
@@ -105,12 +105,44 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="8hK-61-v4Q">
+                                <rect key="frame" x="114.5" y="760" width="185.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already registered?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCt-YR-D8g" customClass="BottomSwitchLabel" customModule="mentorz_clone_test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaA-by-gxQ" customClass="BottomSwitchButton" customModule="mentorz_clone_test" customModuleProvider="target">
+                                        <rect key="frame" x="147.5" y="0.0" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="UZI-uI-Gzx">
+                                <rect key="frame" x="36.5" y="814" width="341" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By using Mentorz you agree with" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-ZM-5r3" customClass="BottomLinkLabel" customModule="mentorz_clone_test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lo0-po-LMA" customClass="BottomLinkButton" customModule="mentorz_clone_test" customModuleProvider="target">
+                                        <rect key="frame" x="172" y="0.0" width="169" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="terms of service and privacy policy"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hr9-68-NOo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="0a4-zv-c4Z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N1i-E9-Wfd" secondAttribute="bottom" id="2Tx-Sa-7do"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UZI-uI-Gzx" secondAttribute="bottom" constant="24" id="3ws-AF-VRF"/>
                             <constraint firstItem="Yuz-N7-FkS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="53E-Sf-lg9"/>
                             <constraint firstItem="N1i-E9-Wfd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.912946" id="5iW-R4-GYS"/>
                             <constraint firstItem="hr9-68-NOo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="A4v-rT-TJG"/>
@@ -119,12 +151,16 @@
                             <constraint firstItem="uro-T1-hPD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Mwa-IJ-Xbj"/>
                             <constraint firstItem="N1i-E9-Wfd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NPq-va-XUy"/>
                             <constraint firstItem="uro-T1-hPD" firstAttribute="top" secondItem="Yuz-N7-FkS" secondAttribute="bottom" constant="24" id="VdC-9Z-fy3"/>
+                            <constraint firstItem="UZI-uI-Gzx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xe4-pA-Qgk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yuz-N7-FkS" secondAttribute="trailing" constant="16" id="Zhj-Iu-OVJ"/>
                             <constraint firstItem="Yuz-N7-FkS" firstAttribute="top" secondItem="hr9-68-NOo" secondAttribute="bottom" constant="48" id="cmQ-pR-cWd"/>
+                            <constraint firstItem="UZI-uI-Gzx" firstAttribute="top" secondItem="8hK-61-v4Q" secondAttribute="bottom" constant="24" id="h8d-Hj-CmN"/>
                             <constraint firstItem="0Js-Ns-S2x" firstAttribute="top" secondItem="uro-T1-hPD" secondAttribute="bottom" constant="24" id="iit-SN-KKc"/>
+                            <constraint firstItem="8hK-61-v4Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nD1-w3-TX4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Js-Ns-S2x" secondAttribute="trailing" constant="16" id="ngL-rD-Dcd"/>
                             <constraint firstItem="N1i-E9-Wfd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oIH-6B-BxQ"/>
                             <constraint firstItem="0Js-Ns-S2x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pEx-Jq-qnP"/>
+                            <constraint firstItem="8hK-61-v4Q" firstAttribute="top" secondItem="0Js-Ns-S2x" secondAttribute="bottom" constant="24" id="wKz-A4-aGf"/>
                             <constraint firstItem="hr9-68-NOo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xG4-Jm-yC7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N1i-E9-Wfd" secondAttribute="trailing" id="zJP-r4-3kk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uro-T1-hPD" secondAttribute="trailing" constant="16" id="zLe-1i-9yW"/>

@@ -15,6 +15,12 @@
 		702AC49D25E18E67004B21B9 /* FacebookSocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49C25E18E67004B21B9 /* FacebookSocialMediaButton.swift */; };
 		702AC4A025E19113004B21B9 /* LinkedInSocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49F25E19113004B21B9 /* LinkedInSocialMediaButton.swift */; };
 		702AC4A325E19250004B21B9 /* AppleSocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC4A225E19250004B21B9 /* AppleSocialMediaButton.swift */; };
+		702AC4A625E19A18004B21B9 /* UILabel+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC4A525E19A18004B21B9 /* UILabel+Text.swift */; };
+		702AC4A925E19A54004B21B9 /* UIButton+Tittle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC4A825E19A54004B21B9 /* UIButton+Tittle.swift */; };
+		702AC4AC25E19FD5004B21B9 /* BottomSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC4AB25E19FD5004B21B9 /* BottomSwitchButton.swift */; };
+		702AC4AF25E19FF3004B21B9 /* BottomSwitchLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC4AE25E19FF3004B21B9 /* BottomSwitchLabel.swift */; };
+		702AC4B225E1A00A004B21B9 /* BottomLinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC4B125E1A00A004B21B9 /* BottomLinkLabel.swift */; };
+		702AC4B525E1A01E004B21B9 /* BottomLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC4B425E1A01E004B21B9 /* BottomLinkButton.swift */; };
 		7042639A25E122EB007BD4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639925E122EB007BD4F4 /* AppDelegate.swift */; };
 		7042639C25E122EB007BD4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639B25E122EB007BD4F4 /* SceneDelegate.swift */; };
 		7042639E25E122EB007BD4F4 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639D25E122EB007BD4F4 /* SplashViewController.swift */; };
@@ -32,6 +38,12 @@
 		702AC49C25E18E67004B21B9 /* FacebookSocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSocialMediaButton.swift; sourceTree = "<group>"; };
 		702AC49F25E19113004B21B9 /* LinkedInSocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInSocialMediaButton.swift; sourceTree = "<group>"; };
 		702AC4A225E19250004B21B9 /* AppleSocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSocialMediaButton.swift; sourceTree = "<group>"; };
+		702AC4A525E19A18004B21B9 /* UILabel+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Text.swift"; sourceTree = "<group>"; };
+		702AC4A825E19A54004B21B9 /* UIButton+Tittle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Tittle.swift"; sourceTree = "<group>"; };
+		702AC4AB25E19FD5004B21B9 /* BottomSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSwitchButton.swift; sourceTree = "<group>"; };
+		702AC4AE25E19FF3004B21B9 /* BottomSwitchLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSwitchLabel.swift; sourceTree = "<group>"; };
+		702AC4B125E1A00A004B21B9 /* BottomLinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomLinkLabel.swift; sourceTree = "<group>"; };
+		702AC4B425E1A01E004B21B9 /* BottomLinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomLinkButton.swift; sourceTree = "<group>"; };
 		7042639625E122EB007BD4F4 /* mentorz-clone-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mentorz-clone-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7042639925E122EB007BD4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7042639B25E122EB007BD4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				702AC49625E18ABC004B21B9 /* UIView+Borders.swift */,
+				702AC4A525E19A18004B21B9 /* UILabel+Text.swift */,
+				702AC4A825E19A54004B21B9 /* UIButton+Tittle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -145,6 +159,10 @@
 				702AC49C25E18E67004B21B9 /* FacebookSocialMediaButton.swift */,
 				702AC49F25E19113004B21B9 /* LinkedInSocialMediaButton.swift */,
 				702AC4A225E19250004B21B9 /* AppleSocialMediaButton.swift */,
+				702AC4AB25E19FD5004B21B9 /* BottomSwitchButton.swift */,
+				702AC4AE25E19FF3004B21B9 /* BottomSwitchLabel.swift */,
+				702AC4B125E1A00A004B21B9 /* BottomLinkLabel.swift */,
+				702AC4B425E1A01E004B21B9 /* BottomLinkButton.swift */,
 			);
 			path = UIControllers;
 			sourceTree = "<group>";
@@ -273,14 +291,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702AC4B525E1A01E004B21B9 /* BottomLinkButton.swift in Sources */,
 				7042639E25E122EB007BD4F4 /* SplashViewController.swift in Sources */,
 				702AC49A25E18D6E004B21B9 /* SocialMediaButtons.swift in Sources */,
+				702AC4AF25E19FF3004B21B9 /* BottomSwitchLabel.swift in Sources */,
+				702AC4A925E19A54004B21B9 /* UIButton+Tittle.swift in Sources */,
 				7042639A25E122EB007BD4F4 /* AppDelegate.swift in Sources */,
 				702AC49D25E18E67004B21B9 /* FacebookSocialMediaButton.swift in Sources */,
+				702AC4A625E19A18004B21B9 /* UILabel+Text.swift in Sources */,
 				702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */,
 				7042639C25E122EB007BD4F4 /* SceneDelegate.swift in Sources */,
 				702AC4A325E19250004B21B9 /* AppleSocialMediaButton.swift in Sources */,
 				702AC49725E18ABC004B21B9 /* UIView+Borders.swift in Sources */,
+				702AC4B225E1A00A004B21B9 /* BottomLinkLabel.swift in Sources */,
+				702AC4AC25E19FD5004B21B9 /* BottomSwitchButton.swift in Sources */,
 				702AC4A025E19113004B21B9 /* LinkedInSocialMediaButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
