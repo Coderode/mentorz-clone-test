@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1970CC39186745CD2D1427CB /* Pods_mentorz_clone_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA06192B8E060DC1D44C0D /* Pods_mentorz_clone_test.framework */; };
 		7042639A25E122EB007BD4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639925E122EB007BD4F4 /* AppDelegate.swift */; };
 		7042639C25E122EB007BD4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639B25E122EB007BD4F4 /* SceneDelegate.swift */; };
 		7042639E25E122EB007BD4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639D25E122EB007BD4F4 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45E21E89A9234DE2E08732AE /* Pods-mentorz-clone-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorz-clone-test.debug.xcconfig"; path = "Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test.debug.xcconfig"; sourceTree = "<group>"; };
+		52AA06192B8E060DC1D44C0D /* Pods_mentorz_clone_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mentorz_clone_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7042639625E122EB007BD4F4 /* mentorz-clone-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mentorz-clone-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7042639925E122EB007BD4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7042639B25E122EB007BD4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,6 +28,7 @@
 		704263A525E122EC007BD4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		704263A725E122EC007BD4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		704263AE25E12307007BD4F4 /* mentorz-clone-test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mentorz-clone-test.entitlements"; sourceTree = "<group>"; };
+		C30ABB5E39CF527832988919 /* Pods-mentorz-clone-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorz-clone-test.release.xcconfig"; path = "Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1970CC39186745CD2D1427CB /* Pods_mentorz_clone_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5138555D76221FFB195ED481 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45E21E89A9234DE2E08732AE /* Pods-mentorz-clone-test.debug.xcconfig */,
+				C30ABB5E39CF527832988919 /* Pods-mentorz-clone-test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		58027086FC17D4C2BC9B9833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52AA06192B8E060DC1D44C0D /* Pods_mentorz_clone_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7042638D25E122EB007BD4F4 = {
 			isa = PBXGroup;
 			children = (
 				7042639825E122EB007BD4F4 /* mentorz-clone-test */,
 				7042639725E122EB007BD4F4 /* Products */,
+				5138555D76221FFB195ED481 /* Pods */,
+				58027086FC17D4C2BC9B9833 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 704263AA25E122EC007BD4F4 /* Build configuration list for PBXNativeTarget "mentorz-clone-test" */;
 			buildPhases = (
+				021AB595315717B7E1514AC6 /* [CP] Check Pods Manifest.lock */,
 				7042639225E122EB007BD4F4 /* Sources */,
 				7042639325E122EB007BD4F4 /* Frameworks */,
 				7042639425E122EB007BD4F4 /* Resources */,
+				FDACEE194E13F41AEFC6DC04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		021AB595315717B7E1514AC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mentorz-clone-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDACEE194E13F41AEFC6DC04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7042639225E122EB007BD4F4 /* Sources */ = {
@@ -285,6 +354,7 @@
 		};
 		704263AB25E122EC007BD4F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E21E89A9234DE2E08732AE /* Pods-mentorz-clone-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +375,7 @@
 		};
 		704263AC25E122EC007BD4F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C30ABB5E39CF527832988919 /* Pods-mentorz-clone-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
