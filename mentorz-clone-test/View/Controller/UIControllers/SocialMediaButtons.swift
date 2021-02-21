@@ -17,7 +17,7 @@ class SocialMediaButtons : UIButton {
         tintColor = .white
         contentHorizontalAlignment = .center
         contentVerticalAlignment = .center
-        contentEdgeInsets = UIEdgeInsets(top: 18,left: 2,bottom: 18,right: 5)
+        contentEdgeInsets = UIEdgeInsets(top: 0,left: 2,bottom: 0,right: 5)
         titleEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
     }
 }

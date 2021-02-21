@@ -12,6 +12,6 @@ class ButtonView: UIButton {
         tintColor = .black
         contentHorizontalAlignment = .center
         contentVerticalAlignment = .center
-        contentEdgeInsets = UIEdgeInsets(top: 18,left: 0,bottom: 18,right: 0)
+//        contentEdgeInsets = UIEdgeInsets(top: 18,left: 0,bottom: 18,right: 0)
     }
 }
