@@ -26,6 +26,8 @@
 		7042639E25E122EB007BD4F4 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042639D25E122EB007BD4F4 /* SplashViewController.swift */; };
 		704263A125E122EB007BD4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7042639F25E122EB007BD4F4 /* Main.storyboard */; };
 		704263A625E122EC007BD4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704263A425E122EC007BD4F4 /* LaunchScreen.storyboard */; };
+		707F2F3025E265A30020E026 /* CollectionCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F2F2F25E265A20020E026 /* CollectionCellVC.swift */; };
+		707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F2F3325E2B52A0020E026 /* HeadLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		704263A525E122EC007BD4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		704263A725E122EC007BD4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		704263AE25E12307007BD4F4 /* mentorz-clone-test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mentorz-clone-test.entitlements"; sourceTree = "<group>"; };
+		707F2F2F25E265A20020E026 /* CollectionCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellVC.swift; sourceTree = "<group>"; };
+		707F2F3325E2B52A0020E026 /* HeadLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLabel.swift; sourceTree = "<group>"; };
 		C30ABB5E39CF527832988919 /* Pods-mentorz-clone-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorz-clone-test.release.xcconfig"; path = "Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				7042639D25E122EB007BD4F4 /* SplashViewController.swift */,
+				707F2F2F25E265A20020E026 /* CollectionCellVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				702AC4AE25E19FF3004B21B9 /* BottomSwitchLabel.swift */,
 				702AC4B125E1A00A004B21B9 /* BottomLinkLabel.swift */,
 				702AC4B425E1A01E004B21B9 /* BottomLinkButton.swift */,
+				707F2F3325E2B52A0020E026 /* HeadLabel.swift */,
 			);
 			path = UIControllers;
 			sourceTree = "<group>";
@@ -297,6 +303,8 @@
 				702AC4AF25E19FF3004B21B9 /* BottomSwitchLabel.swift in Sources */,
 				702AC4A925E19A54004B21B9 /* UIButton+Tittle.swift in Sources */,
 				7042639A25E122EB007BD4F4 /* AppDelegate.swift in Sources */,
+				707F2F3025E265A30020E026 /* CollectionCellVC.swift in Sources */,
+				707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */,
 				702AC49D25E18E67004B21B9 /* FacebookSocialMediaButton.swift in Sources */,
 				702AC4A625E19A18004B21B9 /* UILabel+Text.swift in Sources */,
 				702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */,

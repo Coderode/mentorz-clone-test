@@ -12,7 +12,7 @@ class BottomLinkButton: UIButton {
     override func awakeFromNib() {
         super.awakeFromNib()
         titleLabel!.font = UIFont.systemFont(ofSize: CGFloat(12))
-        setTitleColor(UIColor.blue, for: UIControl.State.normal)
+        setTitleColor(UIColor.systemBlue, for: UIControl.State.normal)
         titleLabel?.textAlignment = .left
         titleLabel?.lineBreakMode = .byWordWrapping
         titleLabel!.numberOfLines = 2
