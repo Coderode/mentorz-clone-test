@@ -1,9 +1,3 @@
-//
-//  BottomLabelCollectionCell.swift
-//  mentorz-clone-test
-//
-//  Created by craterzone on 22/02/21.
-//
 
 import UIKit
 

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_bg" translatesAutoresizingMaskIntoConstraints="NO" id="2aA-Zm-EV9">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -53,12 +53,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2aA-Zm-EV9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HPN-7O-XY4"/>
+                            <constraint firstItem="2aA-Zm-EV9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HPN-7O-XY4"/>
                             <constraint firstItem="fKq-8a-Xs8" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.4" id="Keu-0b-xHE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2aA-Zm-EV9" secondAttribute="bottom" id="Nve-lh-z6b"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2aA-Zm-EV9" secondAttribute="trailing" id="Obq-dG-m8H"/>
+                            <constraint firstAttribute="bottom" secondItem="2aA-Zm-EV9" secondAttribute="bottom" id="Nve-lh-z6b"/>
+                            <constraint firstAttribute="trailing" secondItem="2aA-Zm-EV9" secondAttribute="trailing" id="Obq-dG-m8H"/>
                             <constraint firstItem="fKq-8a-Xs8" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.7" id="dgS-9V-MXT"/>
-                            <constraint firstItem="2aA-Zm-EV9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eIo-Lg-Mlc"/>
+                            <constraint firstItem="2aA-Zm-EV9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="eIo-Lg-Mlc"/>
                             <constraint firstItem="fKq-8a-Xs8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="h1V-i8-iYI"/>
                             <constraint firstItem="fKq-8a-Xs8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jct-sI-2Y0"/>
                         </constraints>
