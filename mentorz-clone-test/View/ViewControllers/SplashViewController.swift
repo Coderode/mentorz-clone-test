@@ -1,24 +1,37 @@
 import UIKit
 class SplashViewController: UIViewController {
     @IBOutlet weak var orLeft: UIView!
-    
     @IBOutlet weak var orRight: UIView!
-    
     @IBOutlet weak var orLabel: UILabel!
-    
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var pageControl: UIPageControl!
     
     var imageCollection : [UIImage] = [UIImage(named: "logo-1")!,UIImage(named: "2_img")!,UIImage(named: "3_img")!,UIImage(named: "4_img")!]
     var labelCollection : [String] = ["Expand your horizons","Match with mentors with the expertise you need","Become a mentor and help others grow","Connect and learn"]
-    var x = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         orLeft.addTopBorderWithColor(color: .white, width: 1)
         orRight.addTopBorderWithColor(color: .white, width: 1)
         orLabel.textColor = .white
+    
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        //let width = collectionView.frame.size.width
+        //let height = collectionView.frame.size.height
+        //layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        //layout.itemSize = CGSize(width: width, height: height)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        layout.scrollDirection = .horizontal
+        collectionView!.collectionViewLayout = layout
+        
+        collectionView.register(UINib(nibName: "BottomLabelCollectionCell", bundle: .main), forCellWithReuseIdentifier: "BottomLabelCollectionCell")
+        
+        collectionView.register(UINib(nibName: "TopLabelCollectionCell", bundle: .main), forCellWithReuseIdentifier: "TopLabelCollectionCell")
+
+        
         collectionView.delegate = self
+        collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.clear
         collectionView.isScrollEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
@@ -41,20 +54,23 @@ class SplashViewController: UIViewController {
     
     // create auto scroll
     @objc func autoScroll() {
-        self.pageControl.currentPage = x
-        if self.x < 4 {
-            let indexPath = IndexPath(item: x, section: 0)
-            self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-            self.x = self.x + 1
+        
+        if pageControl.currentPage == pageControl.numberOfPages-1 {
+            pageControl.currentPage = 0
+            let indexPath = IndexPath(item: 0, section: 0)
+            self.collectionView.scrollToItem(at: indexPath, at: .right, animated: true)
         } else {
-            self.x = 0
-            self.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .centeredHorizontally, animated: true)
+            pageControl.currentPage += 1
+            let indexPath = IndexPath(item : pageControl.currentPage, section: 0)
+            self.collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
         }
     }
     
     
 }
-extension SplashViewController : UICollectionViewDelegate, UICollectionViewDataSource{
+
+
+extension SplashViewController : UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -62,10 +78,31 @@ extension SplashViewController : UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as? CollectionCellVC
-        cell?.image.image = imageCollection[indexPath.row]
-        cell?.label.text = labelCollection[indexPath.row]
-        return cell!
+//        print(indexPath.row)
+        if indexPath.row == 0 {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BottomLabelCollectionCell", for: indexPath) as? BottomLabelCollectionCell else { return UICollectionViewCell() }
+            cell.setData(imageCollection[indexPath.row], labelCollection[indexPath.row])
+            return cell
+        }else{
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopLabelCollectionCell", for: indexPath) as? TopLabelCollectionCell else { return UICollectionViewCell() }
+            cell.setData(imageCollection[indexPath.row], labelCollection[indexPath.row])
+            return cell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width-10, height: collectionView.frame.size.height-10)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 4
     }
     
 }
