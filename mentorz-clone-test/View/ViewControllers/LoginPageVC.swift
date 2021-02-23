@@ -40,6 +40,7 @@ class LoginPageVC: UIViewController {
         //actions
         forgotPasswordButton.addTarget(self, action: #selector(didForgotPasswordButtonTapped), for: .touchUpInside)
         switchToSignupPageButton.addTarget(self, action: #selector(didSwitchToSignupButtonTapped), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(didLoginButtonTapped), for: .touchUpInside)
     }
     @objc func btnPasswordVisibilityTapped(_ sender : Any){
         (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
@@ -59,5 +60,15 @@ class LoginPageVC: UIViewController {
     }
     @objc func didSwitchToSignupButtonTapped(){
         self.dismiss(animated: false, completion: nil)
+    }
+    
+    @objc func didLoginButtonTapped(){
+        //user login
+        //...
+        //...
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SideBarMenuVC") as! SideBarMenuVC
+        nextViewController.modalPresentationStyle = .fullScreen
+        self.present(nextViewController, animated: false, completion: nil)
     }
 }

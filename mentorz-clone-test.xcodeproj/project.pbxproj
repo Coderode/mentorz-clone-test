@@ -35,6 +35,13 @@
 		70635D9925E3E07F002A723A /* loginSignupLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70635D9825E3E07F002A723A /* loginSignupLogo.swift */; };
 		706879B425E4DF7A00A77AEA /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */; };
 		706879B725E50D4000A77AEA /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879B625E50D4000A77AEA /* BackButton.swift */; };
+		706879BA25E56FE300A77AEA /* SideBarMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879B925E56FE300A77AEA /* SideBarMenuVC.swift */; };
+		706879BD25E57B4600A77AEA /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879BC25E57B4600A77AEA /* SideBarVC.swift */; };
+		706879C025E57BCB00A77AEA /* RootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879BF25E57BCB00A77AEA /* RootTabBarVC.swift */; };
+		706879C325E57BFA00A77AEA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879C225E57BFA00A77AEA /* HomeVC.swift */; };
+		706879C625E57C0F00A77AEA /* MatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879C525E57C0F00A77AEA /* MatchVC.swift */; };
+		706879C925E57C2100A77AEA /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879C825E57C2100A77AEA /* MessagesVC.swift */; };
+		706879CC25E57C3600A77AEA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879CB25E57C3600A77AEA /* ProfileVC.swift */; };
 		707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F2F3325E2B52A0020E026 /* HeadLabel.swift */; };
 		70AC07E125E4255B00B6C6DD /* LoginSignupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +79,13 @@
 		70635D9825E3E07F002A723A /* loginSignupLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginSignupLogo.swift; sourceTree = "<group>"; };
 		706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		706879B625E50D4000A77AEA /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		706879B925E56FE300A77AEA /* SideBarMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenuVC.swift; sourceTree = "<group>"; };
+		706879BC25E57B4600A77AEA /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
+		706879BF25E57BCB00A77AEA /* RootTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarVC.swift; sourceTree = "<group>"; };
+		706879C225E57BFA00A77AEA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		706879C525E57C0F00A77AEA /* MatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchVC.swift; sourceTree = "<group>"; };
+		706879C825E57C2100A77AEA /* MessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
+		706879CB25E57C3600A77AEA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		707F2F3325E2B52A0020E026 /* HeadLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLabel.swift; sourceTree = "<group>"; };
 		70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupTextField.swift; sourceTree = "<group>"; };
 		C30ABB5E39CF527832988919 /* Pods-mentorz-clone-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorz-clone-test.release.xcconfig"; path = "Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +182,13 @@
 				70635D9225E3D5C3002A723A /* LoginPageVC.swift */,
 				70635D9525E3D5D6002A723A /* SignupPageVC.swift */,
 				706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */,
+				706879B925E56FE300A77AEA /* SideBarMenuVC.swift */,
+				706879BC25E57B4600A77AEA /* SideBarVC.swift */,
+				706879BF25E57BCB00A77AEA /* RootTabBarVC.swift */,
+				706879C225E57BFA00A77AEA /* HomeVC.swift */,
+				706879C525E57C0F00A77AEA /* MatchVC.swift */,
+				706879C825E57C2100A77AEA /* MessagesVC.swift */,
+				706879CB25E57C3600A77AEA /* ProfileVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -326,12 +347,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706879C025E57BCB00A77AEA /* RootTabBarVC.swift in Sources */,
+				706879C325E57BFA00A77AEA /* HomeVC.swift in Sources */,
 				702AC4B525E1A01E004B21B9 /* BottomLinkButton.swift in Sources */,
 				70AC07E125E4255B00B6C6DD /* LoginSignupTextField.swift in Sources */,
 				7042639E25E122EB007BD4F4 /* SplashViewController.swift in Sources */,
 				70635D5525E3772B002A723A /* TopLabelCollectionCell.swift in Sources */,
 				702AC49A25E18D6E004B21B9 /* SocialMediaButtons.swift in Sources */,
 				702AC4AF25E19FF3004B21B9 /* BottomSwitchLabel.swift in Sources */,
+				706879BA25E56FE300A77AEA /* SideBarMenuVC.swift in Sources */,
 				706879B425E4DF7A00A77AEA /* ForgotPasswordVC.swift in Sources */,
 				70635D9625E3D5D6002A723A /* SignupPageVC.swift in Sources */,
 				706879B725E50D4000A77AEA /* BackButton.swift in Sources */,
@@ -341,12 +365,16 @@
 				707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */,
 				702AC49D25E18E67004B21B9 /* FacebookSocialMediaButton.swift in Sources */,
 				702AC4A625E19A18004B21B9 /* UILabel+Text.swift in Sources */,
+				706879C925E57C2100A77AEA /* MessagesVC.swift in Sources */,
 				702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */,
 				7042639C25E122EB007BD4F4 /* SceneDelegate.swift in Sources */,
 				702AC4A325E19250004B21B9 /* AppleSocialMediaButton.swift in Sources */,
 				702AC49725E18ABC004B21B9 /* UIView+Borders.swift in Sources */,
 				702AC4B225E1A00A004B21B9 /* BottomLinkLabel.swift in Sources */,
+				706879BD25E57B4600A77AEA /* SideBarVC.swift in Sources */,
+				706879CC25E57C3600A77AEA /* ProfileVC.swift in Sources */,
 				702AC4AC25E19FD5004B21B9 /* BottomSwitchButton.swift in Sources */,
+				706879C625E57C0F00A77AEA /* MatchVC.swift in Sources */,
 				702AC4A025E19113004B21B9 /* LinkedInSocialMediaButton.swift in Sources */,
 				70635D9925E3E07F002A723A /* loginSignupLogo.swift in Sources */,
 				70635D5A25E37747002A723A /* BottomLabelCollectionCell.swift in Sources */,
