@@ -11,22 +11,43 @@ class LoginPageVC: UIViewController {
     
     @IBOutlet weak var password: MDCFilledTextField!
     
+    @IBOutlet weak var countryCodePicker: MDCFilledTextField!
+    
+    
+    @IBOutlet weak var loginButton: ButtonView!
+    
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    
+    
+    @IBOutlet weak var orLeftView: UIView!
+    
+    @IBOutlet weak var orRightView: UIView!
+    
+    @IBOutlet weak var orLabel: UILabel!
+    
+    @IBOutlet weak var switchToSignupPageButton: BottomSwitchButton!
+    
+    @IBOutlet weak var bottomLinkButton: LoginSignupBottomLinkButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundImage.image = UIImage(named: "bg")
         backgroundImage.alpha = 0.1
-        phoneNumber.label.text = "Phone number"
-        phoneNumber.setNormalLabelColor(UIColor.gray, for: MDCTextControlState.normal)
-        phoneNumber.setNormalLabelColor(UIColor.black, for: MDCTextControlState.editing)
-        phoneNumber.setFloatingLabelColor(UIColor.gray, for: MDCTextControlState.normal)
-        phoneNumber.setFloatingLabelColor(UIColor.black, for: MDCTextControlState.editing)
-        phoneNumber.setTextColor(UIColor.black, for: MDCTextControlState.editing)
-        phoneNumber.setFilledBackgroundColor(UIColor.clear, for: MDCTextControlState.editing)
-        phoneNumber.setFilledBackgroundColor(UIColor.clear, for: MDCTextControlState.normal)
-        phoneNumber.tintColor = #colorLiteral(red: 0.968627451, green: 0.1803921569, blue: 0.2196078431, alpha: 1)
-        phoneNumber.textColor = .black
-        phoneNumber.setUnderlineColor(#colorLiteral(red: 0.968627451, green: 0.1803921569, blue: 0.2196078431, alpha: 1) , for: MDCTextControlState.editing)
-        phoneNumber.setUnderlineColor(UIColor.gray, for: MDCTextControlState.normal)
-        phoneNumber.font = UIFont.systemFont(ofSize: CGFloat(17))
-        password.label.text = "Password"
+        LoginSignupTextField.textFieldDesign(phoneNumber, "Phone number")
+        LoginSignupTextField.textFieldDesign(password, "Password")
+        LoginSignupTextField.countryCodePickerDesign(countryCodePicker)
+        orLeftView.addTopBorderWithColor(color: .gray, width: 1)
+        orRightView.addTopBorderWithColor(color: .gray, width: 1)
+        forgotPasswordButton.addTarget(self, action: #selector(didForgotPasswordButtonTapped), for: .touchUpInside)
+        
+        
+        
+    }
+    
+    @objc func didForgotPasswordButtonTapped(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ForgotPasswordVC") as! ForgotPasswordVC
+        nextViewController.modalPresentationStyle = .fullScreen
+        self.present(nextViewController, animated:false, completion:nil)
+        
     }
 }

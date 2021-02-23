@@ -33,7 +33,9 @@
 		70635D9325E3D5C3002A723A /* LoginPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70635D9225E3D5C3002A723A /* LoginPageVC.swift */; };
 		70635D9625E3D5D6002A723A /* SignupPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70635D9525E3D5D6002A723A /* SignupPageVC.swift */; };
 		70635D9925E3E07F002A723A /* loginSignupLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70635D9825E3E07F002A723A /* loginSignupLogo.swift */; };
+		706879B425E4DF7A00A77AEA /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */; };
 		707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F2F3325E2B52A0020E026 /* HeadLabel.swift */; };
+		70AC07E125E4255B00B6C6DD /* LoginSignupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +69,9 @@
 		70635D9225E3D5C3002A723A /* LoginPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVC.swift; sourceTree = "<group>"; };
 		70635D9525E3D5D6002A723A /* SignupPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageVC.swift; sourceTree = "<group>"; };
 		70635D9825E3E07F002A723A /* loginSignupLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginSignupLogo.swift; sourceTree = "<group>"; };
+		706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		707F2F3325E2B52A0020E026 /* HeadLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLabel.swift; sourceTree = "<group>"; };
+		70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupTextField.swift; sourceTree = "<group>"; };
 		C30ABB5E39CF527832988919 /* Pods-mentorz-clone-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorz-clone-test.release.xcconfig"; path = "Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +165,7 @@
 				70635D5825E37747002A723A /* BottomLabelCollectionCell.swift */,
 				70635D9225E3D5C3002A723A /* LoginPageVC.swift */,
 				70635D9525E3D5D6002A723A /* SignupPageVC.swift */,
+				706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				702AC4B425E1A01E004B21B9 /* BottomLinkButton.swift */,
 				707F2F3325E2B52A0020E026 /* HeadLabel.swift */,
 				70635D9825E3E07F002A723A /* loginSignupLogo.swift */,
+				70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */,
 			);
 			path = UIControllers;
 			sourceTree = "<group>";
@@ -318,10 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				702AC4B525E1A01E004B21B9 /* BottomLinkButton.swift in Sources */,
+				70AC07E125E4255B00B6C6DD /* LoginSignupTextField.swift in Sources */,
 				7042639E25E122EB007BD4F4 /* SplashViewController.swift in Sources */,
 				70635D5525E3772B002A723A /* TopLabelCollectionCell.swift in Sources */,
 				702AC49A25E18D6E004B21B9 /* SocialMediaButtons.swift in Sources */,
 				702AC4AF25E19FF3004B21B9 /* BottomSwitchLabel.swift in Sources */,
+				706879B425E4DF7A00A77AEA /* ForgotPasswordVC.swift in Sources */,
 				70635D9625E3D5D6002A723A /* SignupPageVC.swift in Sources */,
 				702AC4A925E19A54004B21B9 /* UIButton+Tittle.swift in Sources */,
 				7042639A25E122EB007BD4F4 /* AppDelegate.swift in Sources */,

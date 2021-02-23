@@ -17,3 +17,12 @@ class BottomSwitchLabel: UILabel {
     }
 
 }
+
+class LoginSignupBottomSwitchLabel : UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        font = UIFont.boldSystemFont(ofSize: CGFloat(20))
+        textColor = UIColor.black
+        textAlignment = .right
+    }
+}
