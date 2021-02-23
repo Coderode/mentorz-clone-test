@@ -34,6 +34,7 @@
 		70635D9625E3D5D6002A723A /* SignupPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70635D9525E3D5D6002A723A /* SignupPageVC.swift */; };
 		70635D9925E3E07F002A723A /* loginSignupLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70635D9825E3E07F002A723A /* loginSignupLogo.swift */; };
 		706879B425E4DF7A00A77AEA /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */; };
+		706879B725E50D4000A77AEA /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879B625E50D4000A77AEA /* BackButton.swift */; };
 		707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F2F3325E2B52A0020E026 /* HeadLabel.swift */; };
 		70AC07E125E4255B00B6C6DD /* LoginSignupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		70635D9525E3D5D6002A723A /* SignupPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageVC.swift; sourceTree = "<group>"; };
 		70635D9825E3E07F002A723A /* loginSignupLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginSignupLogo.swift; sourceTree = "<group>"; };
 		706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		706879B625E50D4000A77AEA /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		707F2F3325E2B52A0020E026 /* HeadLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLabel.swift; sourceTree = "<group>"; };
 		70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupTextField.swift; sourceTree = "<group>"; };
 		C30ABB5E39CF527832988919 /* Pods-mentorz-clone-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorz-clone-test.release.xcconfig"; path = "Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				707F2F3325E2B52A0020E026 /* HeadLabel.swift */,
 				70635D9825E3E07F002A723A /* loginSignupLogo.swift */,
 				70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */,
+				706879B625E50D4000A77AEA /* BackButton.swift */,
 			);
 			path = UIControllers;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				702AC4AF25E19FF3004B21B9 /* BottomSwitchLabel.swift in Sources */,
 				706879B425E4DF7A00A77AEA /* ForgotPasswordVC.swift in Sources */,
 				70635D9625E3D5D6002A723A /* SignupPageVC.swift in Sources */,
+				706879B725E50D4000A77AEA /* BackButton.swift in Sources */,
 				702AC4A925E19A54004B21B9 /* UIButton+Tittle.swift in Sources */,
 				7042639A25E122EB007BD4F4 /* AppDelegate.swift in Sources */,
 				70635D9325E3D5C3002A723A /* LoginPageVC.swift in Sources */,

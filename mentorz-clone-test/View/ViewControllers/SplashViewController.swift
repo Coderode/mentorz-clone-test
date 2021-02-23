@@ -49,6 +49,11 @@ class SplashViewController: UIViewController {
         pageControl.currentPage = 0
         pageControl.currentPageIndicatorTintColor = .white
         pageControl.pageIndicatorTintColor = .lightGray
+        
+        //actions
+        loginPageSwitchButton.addTarget(self, action: #selector(loginPageSwitchButtonTapped), for: .touchUpInside)
+        signupButton.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
+        
         setTimer()
     }
     
@@ -70,6 +75,24 @@ class SplashViewController: UIViewController {
             let indexPath = IndexPath(item : pageControl.currentPage, section: 0)
             self.collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
         }
+    }
+    
+    @objc func loginPageSwitchButtonTapped(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "LoginPageVC") as! LoginPageVC
+        nextViewController.modalPresentationStyle = .fullScreen
+        self.present(nextViewController, animated: false, completion: nil)
+    }
+    
+    @objc func signupButtonTapped(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SignupPageVC") as! SignupPageVC
+        nextViewController.modalPresentationStyle = .fullScreen
+        self.present(nextViewController, animated: false, completion: nil)
+//        weak var pvc = self.presentingViewController
+//        self.dismiss(animated: false, completion: {
+//            pvc?.present(nextViewController, animated: false, completion: nil)
+//        })
     }
     
     
