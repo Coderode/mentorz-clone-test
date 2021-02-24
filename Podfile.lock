@@ -1,8 +1,15 @@
 PODS:
   - Alamofire (5.4.1)
   - IQKeyboardManager (6.5.6)
+  - MaterialComponents/ActivityIndicator (122.0.1):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
   - MaterialComponents/AnimationTiming (122.0.1)
   - MaterialComponents/Availability (122.0.1)
+  - MaterialComponents/Palettes (122.0.1)
+  - MaterialComponents/private/Application (122.0.1)
   - MaterialComponents/private/Math (122.0.1)
   - "MaterialComponents/private/TextControlsPrivate+BaseStyle (122.0.1)":
     - MaterialComponents/AnimationTiming
@@ -45,6 +52,9 @@ PODS:
     - "MaterialComponents/private/TextControlsPrivate+FilledStyle"
     - "MaterialComponents/TextControls+BaseTextFields"
   - MDFInternationalization (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -52,6 +62,7 @@ PODS:
 
 DEPENDENCIES:
   - IQKeyboardManager
+  - MaterialComponents/ActivityIndicator
   - "MaterialComponents/TextControls+FilledTextAreas"
   - "MaterialComponents/TextControls+FilledTextFields"
   - Moya (~> 14.0)
@@ -62,6 +73,8 @@ SPEC REPOS:
     - IQKeyboardManager
     - MaterialComponents
     - MDFInternationalization
+    - MotionAnimator
+    - MotionInterchange
     - Moya
 
 SPEC CHECKSUMS:
@@ -69,8 +82,10 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   MaterialComponents: bdbe76d0fad6669ebd581267bb42b758c9c95138
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
 
-PODFILE CHECKSUM: 43c89133268f3d9796d5aa9f3c2b76e9edf56e28
+PODFILE CHECKSUM: 9f1503109d610a2cdf46729cea55dce2415de265
 
 COCOAPODS: 1.10.1

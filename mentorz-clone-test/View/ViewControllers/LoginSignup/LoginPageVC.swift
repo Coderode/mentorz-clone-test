@@ -3,6 +3,7 @@
 import UIKit
 import MaterialComponents.MaterialTextControls_FilledTextFields
 import Moya
+import MaterialComponents.MaterialActivityIndicator
 class LoginPageVC: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -18,9 +19,8 @@ class LoginPageVC: UIViewController {
     @IBOutlet weak var bottomLinkButton: LoginSignupBottomLinkButton!
     let secureButton = UIButton(type: .custom)
     
-    let provider = MoyaProvider<UserAccount>()
-    let activityViewController = ActivityIndicatorView()
-
+    private let provider = MoyaProvider<UserAccount>()
+    private let activityIndicator = MDCActivityIndicator()
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundImage.image = UIImage(named: "bg")
@@ -40,6 +40,16 @@ class LoginPageVC: UIViewController {
         self.password.trailingView = self.secureButton
         self.password.trailingViewMode = .always
         self.password.isSecureTextEntry = true
+        
+        //activity indicator
+        activityIndicator.sizeToFit()
+        activityIndicator.indicatorMode = .indeterminate
+        //activityIndicator.backgroundColor = .white
+        activityIndicator.cycleColors = [#colorLiteral(red: 0.968627451, green: 0.1803921569, blue: 0.2196078431, alpha: 1)]
+        let viewHeight = self.view.frame.height
+        let viewWidth = self.view.frame.width
+        activityIndicator.frame = CGRect(x: viewWidth/2 - viewWidth/8, y: viewHeight/2 - viewWidth/8, width: viewWidth/4, height: viewWidth/4)
+        self.view.addSubview(activityIndicator)
         
         //actions
         forgotPasswordButton.addTarget(self, action: #selector(didForgotPasswordButtonTapped), for: .touchUpInside)
@@ -67,15 +77,14 @@ class LoginPageVC: UIViewController {
     }
     
     @objc func didLoginButtonTapped(){
-        self.present(activityViewController, animated: true, completion: nil)
-
+        self.activityIndicator.startAnimating()
         //getting data from the form input
         let phone = PhoneNumber(cc: "91", isoAlpha2_Cc: "in", number: Int(self.phoneNumber.text!)!)
         let deviceInfo = DeviceInfo(deviceToken: "test_token", deviceType: "ANDROID")
         let userDetails = LoginRequest(emailID: "", phoneNumber: phone, password: self.password.text!, deviceInfo: deviceInfo)
 
         provider.request(.login(loginDetail: userDetails)) { (result) in
-            self.activityViewController.dismiss(animated: true, completion: nil)
+            self.activityIndicator.stopAnimating()
             switch result{
             case .success(let response):
                 do{

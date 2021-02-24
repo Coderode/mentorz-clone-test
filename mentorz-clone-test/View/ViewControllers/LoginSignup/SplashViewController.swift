@@ -1,5 +1,5 @@
 import UIKit
-class SplashViewController: UIViewController {
+public class SplashViewController: UIViewController {
     @IBOutlet weak var orLeft: UIView!
     @IBOutlet weak var orRight: UIView!
     @IBOutlet weak var orLabel: UILabel!
@@ -15,7 +15,7 @@ class SplashViewController: UIViewController {
     var imageCollection : [UIImage] = [UIImage(named: "logo-1")!,UIImage(named: "2_img")!,UIImage(named: "3_img")!,UIImage(named: "4_img")!]
     var labelCollection : [String] = ["Expand your horizons","Match with mentors with the expertise you need","Become a mentor and help others grow","Connect and learn"]
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         orLeft.addTopBorderWithColor(color: .white, width: 1)
         orRight.addTopBorderWithColor(color: .white, width: 1)
@@ -102,11 +102,11 @@ class SplashViewController: UIViewController {
 extension SplashViewController : UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 //        print(indexPath.row)
         if indexPath.row == 0 {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BottomLabelCollectionCell", for: indexPath) as? BottomLabelCollectionCell else { return UICollectionViewCell() }
@@ -119,18 +119,18 @@ extension SplashViewController : UICollectionViewDelegate, UICollectionViewDataS
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width-10, height: collectionView.frame.size.height-10)
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 4
     }
     
