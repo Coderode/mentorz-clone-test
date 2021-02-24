@@ -2,7 +2,7 @@
 
 import UIKit
 import MaterialComponents.MaterialTextControls_FilledTextFields
-
+import Moya
 class LoginPageVC: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -17,6 +17,10 @@ class LoginPageVC: UIViewController {
     @IBOutlet weak var switchToSignupPageButton: BottomSwitchButton!
     @IBOutlet weak var bottomLinkButton: LoginSignupBottomLinkButton!
     let secureButton = UIButton(type: .custom)
+    
+    let provider = MoyaProvider<UserAccount>()
+    let activityViewController = ActivityIndicatorView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundImage.image = UIImage(named: "bg")
@@ -63,12 +67,43 @@ class LoginPageVC: UIViewController {
     }
     
     @objc func didLoginButtonTapped(){
-        //user login
-        //...
-        //...
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SideBarMenuVC") as! SideBarMenuVC
-        nextViewController.modalPresentationStyle = .fullScreen
-        self.present(nextViewController, animated: false, completion: nil)
+        self.present(activityViewController, animated: true, completion: nil)
+
+        //getting data from the form input
+        let phone = PhoneNumber(cc: "91", isoAlpha2_Cc: "in", number: Int(self.phoneNumber.text!)!)
+        let deviceInfo = DeviceInfo(deviceToken: "test_token", deviceType: "ANDROID")
+        let userDetails = LoginRequest(emailID: "", phoneNumber: phone, password: self.password.text!, deviceInfo: deviceInfo)
+
+        provider.request(.login(loginDetail: userDetails)) { (result) in
+            self.activityViewController.dismiss(animated: true, completion: nil)
+            switch result{
+            case .success(let response):
+                do{
+                    //let jsonDecoder = JSONDecoder()
+                    //let loginResponse = try jsonDecoder.decode(LoginResponse.self, from: response.data)
+                    //print(loginResponse.name)
+                    //print(try response.mapJSON())
+                    //print(response.statusCode)
+                    if response.statusCode == 200 {
+                        
+                        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SideBarMenuVC") as! SideBarMenuVC
+                        nextViewController.modalPresentationStyle = .fullScreen
+                        self.present(nextViewController, animated: false, completion: nil)
+                    }
+                }catch let parsingError{
+                    print("ERROR!")
+                    print(parsingError.localizedDescription)
+                    print(response.statusCode)
+                }
+                
+            case .failure(let moyaError):
+                print("Failed")
+                ///print(moyaError.errorCode)
+                //print(moyaError.errorUserInfo)
+                print(moyaError.errorDescription!)
+                
+            }
+        }
     }
 }

@@ -6,4 +6,5 @@ target 'mentorz-clone-test' do
   pod 'IQKeyboardManager'
   pod 'MaterialComponents/TextControls+FilledTextAreas'
   pod 'MaterialComponents/TextControls+FilledTextFields'
+
 end
