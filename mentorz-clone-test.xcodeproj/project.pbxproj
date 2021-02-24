@@ -178,9 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				7042639F25E122EB007BD4F4 /* Main.storyboard */,
-				70635D5425E3772B002A723A /* TopLabelCollectionCell.xib */,
 				704263A425E122EC007BD4F4 /* LaunchScreen.storyboard */,
-				70635D5925E37747002A723A /* BottomLabelCollectionCell.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -188,19 +186,12 @@
 		704263B725E12AF1007BD4F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7042639D25E122EB007BD4F4 /* SplashViewController.swift */,
-				70635D5325E3772B002A723A /* TopLabelCollectionCell.swift */,
-				70635D5825E37747002A723A /* BottomLabelCollectionCell.swift */,
-				70635D9225E3D5C3002A723A /* LoginPageVC.swift */,
-				70635D9525E3D5D6002A723A /* SignupPageVC.swift */,
-				706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */,
-				706879B925E56FE300A77AEA /* SideBarMenuVC.swift */,
-				706879BC25E57B4600A77AEA /* SideBarVC.swift */,
-				706879BF25E57BCB00A77AEA /* RootTabBarVC.swift */,
-				706879C225E57BFA00A77AEA /* HomeVC.swift */,
-				706879C525E57C0F00A77AEA /* MatchVC.swift */,
-				706879C825E57C2100A77AEA /* MessagesVC.swift */,
-				706879CB25E57C3600A77AEA /* ProfileVC.swift */,
+				7065785625E6B39D007D6357 /* Profile */,
+				7065785525E6B395007D6357 /* Messages */,
+				7065785425E6B38E007D6357 /* Match */,
+				7065785325E6B388007D6357 /* Home */,
+				7065785225E6B372007D6357 /* Root */,
+				7065785025E6B2EE007D6357 /* LoginSignup */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -216,19 +207,12 @@
 		704263B925E12B1A007BD4F4 /* UIControllers */ = {
 			isa = PBXGroup;
 			children = (
-				702AC49225E17F7A004B21B9 /* ButtonView.swift */,
-				702AC49925E18D6E004B21B9 /* SocialMediaButtons.swift */,
-				702AC49C25E18E67004B21B9 /* FacebookSocialMediaButton.swift */,
-				702AC49F25E19113004B21B9 /* LinkedInSocialMediaButton.swift */,
-				702AC4A225E19250004B21B9 /* AppleSocialMediaButton.swift */,
-				702AC4AB25E19FD5004B21B9 /* BottomSwitchButton.swift */,
+				7065784E25E6B27C007D6357 /* Buttons */,
 				702AC4AE25E19FF3004B21B9 /* BottomSwitchLabel.swift */,
 				702AC4B125E1A00A004B21B9 /* BottomLinkLabel.swift */,
-				702AC4B425E1A01E004B21B9 /* BottomLinkButton.swift */,
 				707F2F3325E2B52A0020E026 /* HeadLabel.swift */,
 				70635D9825E3E07F002A723A /* loginSignupLogo.swift */,
 				70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */,
-				706879B625E50D4000A77AEA /* BackButton.swift */,
 				7075829225E68F7100F36F60 /* ActivityIndicatorView.swift */,
 			);
 			path = UIControllers;
@@ -237,11 +221,91 @@
 		704263BA25E12C2D007BD4F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7065785125E6B33A007D6357 /* Xibs */,
 				704263B825E12B0F007BD4F4 /* Controller */,
 				704263B725E12AF1007BD4F4 /* ViewControllers */,
 				704263B625E12AE5007BD4F4 /* Storyboards */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7065784E25E6B27C007D6357 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				706879B625E50D4000A77AEA /* BackButton.swift */,
+				702AC4A225E19250004B21B9 /* AppleSocialMediaButton.swift */,
+				702AC49F25E19113004B21B9 /* LinkedInSocialMediaButton.swift */,
+				702AC49C25E18E67004B21B9 /* FacebookSocialMediaButton.swift */,
+				702AC49925E18D6E004B21B9 /* SocialMediaButtons.swift */,
+				702AC4AB25E19FD5004B21B9 /* BottomSwitchButton.swift */,
+				702AC49225E17F7A004B21B9 /* ButtonView.swift */,
+				702AC4B425E1A01E004B21B9 /* BottomLinkButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		7065785025E6B2EE007D6357 /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				706879B325E4DF7A00A77AEA /* ForgotPasswordVC.swift */,
+				70635D9525E3D5D6002A723A /* SignupPageVC.swift */,
+				70635D5325E3772B002A723A /* TopLabelCollectionCell.swift */,
+				70635D9225E3D5C3002A723A /* LoginPageVC.swift */,
+				70635D5825E37747002A723A /* BottomLabelCollectionCell.swift */,
+				7042639D25E122EB007BD4F4 /* SplashViewController.swift */,
+			);
+			path = LoginSignup;
+			sourceTree = "<group>";
+		};
+		7065785125E6B33A007D6357 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				70635D5425E3772B002A723A /* TopLabelCollectionCell.xib */,
+				70635D5925E37747002A723A /* BottomLabelCollectionCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		7065785225E6B372007D6357 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				706879B925E56FE300A77AEA /* SideBarMenuVC.swift */,
+				706879BC25E57B4600A77AEA /* SideBarVC.swift */,
+				706879BF25E57BCB00A77AEA /* RootTabBarVC.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		7065785325E6B388007D6357 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				706879C225E57BFA00A77AEA /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7065785425E6B38E007D6357 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				706879C525E57C0F00A77AEA /* MatchVC.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		7065785525E6B395007D6357 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				706879C825E57C2100A77AEA /* MessagesVC.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		7065785625E6B39D007D6357 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				706879CB25E57C3600A77AEA /* ProfileVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		7075825225E62DA700F36F60 /* Networking */ = {
