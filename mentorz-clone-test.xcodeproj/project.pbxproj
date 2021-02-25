@@ -46,9 +46,12 @@
 		7075825525E62DCB00F36F60 /* UserAccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075825425E62DCB00F36F60 /* UserAccountAPI.swift */; };
 		7075825925E63D1500F36F60 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075825825E63D1500F36F60 /* LoginRequest.swift */; };
 		7075825C25E63D7C00F36F60 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075825B25E63D7C00F36F60 /* LoginResponse.swift */; };
-		7075826A25E67FEC00F36F60 /* UserAccountRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075826925E67FEC00F36F60 /* UserAccountRestManager.swift */; };
 		707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F2F3325E2B52A0020E026 /* HeadLabel.swift */; };
 		70AC07E125E4255B00B6C6DD /* LoginSignupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */; };
+		70C398E025E763C400BE0BB3 /* LoginPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398DF25E763C400BE0BB3 /* LoginPageVM.swift */; };
+		70C398E325E7648D00BE0BB3 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398E225E7648D00BE0BB3 /* SocialLoginButton.swift */; };
+		70C398E925E77DBA00BE0BB3 /* LoginRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398E825E77DBA00BE0BB3 /* LoginRestManager.swift */; };
+		70C398FC25E77F3600BE0BB3 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398EE25E77F3600BE0BB3 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,9 +98,12 @@
 		7075825425E62DCB00F36F60 /* UserAccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountAPI.swift; sourceTree = "<group>"; };
 		7075825825E63D1500F36F60 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		7075825B25E63D7C00F36F60 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		7075826925E67FEC00F36F60 /* UserAccountRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountRestManager.swift; sourceTree = "<group>"; };
 		707F2F3325E2B52A0020E026 /* HeadLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLabel.swift; sourceTree = "<group>"; };
 		70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupTextField.swift; sourceTree = "<group>"; };
+		70C398DF25E763C400BE0BB3 /* LoginPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVM.swift; sourceTree = "<group>"; };
+		70C398E225E7648D00BE0BB3 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
+		70C398E825E77DBA00BE0BB3 /* LoginRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRestManager.swift; sourceTree = "<group>"; };
+		70C398EE25E77F3600BE0BB3 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C30ABB5E39CF527832988919 /* Pods-mentorz-clone-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorz-clone-test.release.xcconfig"; path = "Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +157,7 @@
 		7042639825E122EB007BD4F4 /* mentorz-clone-test */ = {
 			isa = PBXGroup;
 			children = (
+				70C398DE25E763A500BE0BB3 /* ViewModel */,
 				7075825325E62DB000F36F60 /* Model */,
 				7075825225E62DA700F36F60 /* Networking */,
 				702AC48F25E168CF004B21B9 /* Assets.xcassets */,
@@ -240,6 +247,7 @@
 				702AC4AB25E19FD5004B21B9 /* BottomSwitchButton.swift */,
 				702AC49225E17F7A004B21B9 /* ButtonView.swift */,
 				702AC4B425E1A01E004B21B9 /* BottomLinkButton.swift */,
+				70C398E225E7648D00BE0BB3 /* SocialLoginButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -328,8 +336,9 @@
 		7075826525E67C8200F36F60 /* RESTManager */ = {
 			isa = PBXGroup;
 			children = (
+				70C398EE25E77F3600BE0BB3 /* APIError.swift */,
+				70C398E725E77DA500BE0BB3 /* Login */,
 				7075826625E67CA000F36F60 /* APIProviders */,
-				7075826925E67FEC00F36F60 /* UserAccountRestManager.swift */,
 			);
 			path = RESTManager;
 			sourceTree = "<group>";
@@ -340,6 +349,22 @@
 				7075825425E62DCB00F36F60 /* UserAccountAPI.swift */,
 			);
 			path = APIProviders;
+			sourceTree = "<group>";
+		};
+		70C398DE25E763A500BE0BB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70C398DF25E763C400BE0BB3 /* LoginPageVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		70C398E725E77DA500BE0BB3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				70C398E825E77DBA00BE0BB3 /* LoginRestManager.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,15 +500,18 @@
 				70635D9325E3D5C3002A723A /* LoginPageVC.swift in Sources */,
 				707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */,
 				702AC49D25E18E67004B21B9 /* FacebookSocialMediaButton.swift in Sources */,
+				70C398E025E763C400BE0BB3 /* LoginPageVM.swift in Sources */,
 				702AC4A625E19A18004B21B9 /* UILabel+Text.swift in Sources */,
 				706879C925E57C2100A77AEA /* MessagesVC.swift in Sources */,
+				70C398E325E7648D00BE0BB3 /* SocialLoginButton.swift in Sources */,
+				70C398FC25E77F3600BE0BB3 /* APIError.swift in Sources */,
 				702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */,
-				7075826A25E67FEC00F36F60 /* UserAccountRestManager.swift in Sources */,
 				7042639C25E122EB007BD4F4 /* SceneDelegate.swift in Sources */,
 				7075825925E63D1500F36F60 /* LoginRequest.swift in Sources */,
 				702AC4A325E19250004B21B9 /* AppleSocialMediaButton.swift in Sources */,
 				702AC49725E18ABC004B21B9 /* UIView+Borders.swift in Sources */,
 				7075825525E62DCB00F36F60 /* UserAccountAPI.swift in Sources */,
+				70C398E925E77DBA00BE0BB3 /* LoginRestManager.swift in Sources */,
 				702AC4B225E1A00A004B21B9 /* BottomLinkLabel.swift in Sources */,
 				706879BD25E57B4600A77AEA /* SideBarVC.swift in Sources */,
 				706879CC25E57C3600A77AEA /* ProfileVC.swift in Sources */,

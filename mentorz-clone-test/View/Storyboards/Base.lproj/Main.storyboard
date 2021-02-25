@@ -374,15 +374,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QTU-J9-NpH">
                                 <rect key="frame" x="16" y="689" width="382" height="57.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWW-hD-Y5X" customClass="FacebookSocialMediaButton" customModule="mentorz_clone_test" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWW-hD-Y5X" customClass="SocialLoginButton" customModule="mentorz_clone_test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="122" height="57.5"/>
                                         <state key="normal" title="facebook"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kC-XC-MKW" customClass="LinkedInSocialMediaButton" customModule="mentorz_clone_test" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kC-XC-MKW" customClass="SocialLoginButton" customModule="mentorz_clone_test" customModuleProvider="target">
                                         <rect key="frame" x="130" y="0.0" width="122" height="57.5"/>
                                         <state key="normal" title="linkedin"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swq-FN-z9z" customClass="AppleSocialMediaButton" customModule="mentorz_clone_test" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swq-FN-z9z" customClass="SocialLoginButton" customModule="mentorz_clone_test" customModuleProvider="target">
                                         <rect key="frame" x="260" y="0.0" width="122" height="57.5"/>
                                         <state key="normal" title="apple"/>
                                     </button>
@@ -455,10 +455,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="appleButton" destination="Swq-FN-z9z" id="YhK-Dw-oSI"/>
                         <outlet property="backgroundImage" destination="Bxm-uj-LKq" id="4no-iJ-DEN"/>
                         <outlet property="bottomLinkButton" destination="yQC-oP-Lmv" id="Arz-2X-xgH"/>
                         <outlet property="countryCodePicker" destination="daR-Qo-jmF" id="nTE-J7-O9W"/>
+                        <outlet property="facebookButton" destination="fWW-hD-Y5X" id="uoI-tQ-QBZ"/>
                         <outlet property="forgotPasswordButton" destination="G8X-HQ-2IB" id="wm5-Yx-RJr"/>
+                        <outlet property="linkedinButton" destination="2kC-XC-MKW" id="ab5-wb-pto"/>
                         <outlet property="loginButton" destination="suM-Tf-uX1" id="sfF-RV-n4q"/>
                         <outlet property="orLabel" destination="TDe-8c-wip" id="SwA-9Y-zNb"/>
                         <outlet property="orLeftView" destination="02D-mT-FHM" id="ZYK-ka-vbg"/>
@@ -640,7 +643,7 @@
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xl0-DQ-5X6">
-                                                <rect key="frame" x="311" y="0.0" width="414" height="896"/>
+                                                <rect key="frame" x="311" y="0.0" width="413.5" height="896"/>
                                                 <connections>
                                                     <segue destination="wWj-5Q-O8c" kind="embed" id="3xX-PS-dqn"/>
                                                 </connections>
@@ -815,7 +818,7 @@
             <objects>
                 <viewController restorationIdentifier="MatchVC" storyboardIdentifier="MatchVC" id="hlp-Ja-qAQ" userLabel="matches" customClass="MatchVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b5F-OL-JzJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="E36-oo-Wun"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -831,7 +834,7 @@
             <objects>
                 <viewController restorationIdentifier="MessagesVC" storyboardIdentifier="MessagesVC" id="jc9-gU-Y0z" userLabel="messages" customClass="MessagesVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJA-8H-jWF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8l3-JP-1OM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -847,7 +850,7 @@
             <objects>
                 <viewController restorationIdentifier="ProfileVC" storyboardIdentifier="ProfileVC" id="mBt-bv-EaM" customClass="ProfileVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X8I-C7-uEu" userLabel="profile">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="tt9-OU-QkA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -863,7 +866,7 @@
             <objects>
                 <viewController restorationIdentifier="HomeVC" storyboardIdentifier="HomeVC" id="fXu-cL-d2L" userLabel="home" customClass="HomeVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xqp-Gv-D36">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="g9e-Db-li9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
