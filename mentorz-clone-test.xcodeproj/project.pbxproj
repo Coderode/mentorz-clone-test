@@ -10,6 +10,8 @@
 		1970CC39186745CD2D1427CB /* Pods_mentorz_clone_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA06192B8E060DC1D44C0D /* Pods_mentorz_clone_test.framework */; };
 		70137A6625E7D31B008F6DF7 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70137A6525E7D31B008F6DF7 /* PhoneNumber.swift */; };
 		70137A6925E7D32A008F6DF7 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70137A6825E7D32A008F6DF7 /* UserDetails.swift */; };
+		70137A8625E8064C008F6DF7 /* MessageAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70137A8525E8064C008F6DF7 /* MessageAlert.swift */; };
+		70137A8925E81CAF008F6DF7 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70137A8825E81CAF008F6DF7 /* Alert.storyboard */; };
 		702AC49025E168CF004B21B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702AC48F25E168CF004B21B9 /* Assets.xcassets */; };
 		702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49225E17F7A004B21B9 /* ButtonView.swift */; };
 		702AC49725E18ABC004B21B9 /* UIView+Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49625E18ABC004B21B9 /* UIView+Borders.swift */; };
@@ -56,6 +58,8 @@
 		52AA06192B8E060DC1D44C0D /* Pods_mentorz_clone_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mentorz_clone_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70137A6525E7D31B008F6DF7 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		70137A6825E7D32A008F6DF7 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		70137A8525E8064C008F6DF7 /* MessageAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlert.swift; sourceTree = "<group>"; };
+		70137A8825E81CAF008F6DF7 /* Alert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
 		702AC48F25E168CF004B21B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		702AC49225E17F7A004B21B9 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		702AC49625E18ABC004B21B9 /* UIView+Borders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Borders.swift"; sourceTree = "<group>"; };
@@ -141,6 +145,14 @@
 			path = login;
 			sourceTree = "<group>";
 		};
+		70137A8425E80623008F6DF7 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				70137A8525E8064C008F6DF7 /* MessageAlert.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		7042638D25E122EB007BD4F4 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +203,7 @@
 			children = (
 				7042639F25E122EB007BD4F4 /* Main.storyboard */,
 				704263A425E122EC007BD4F4 /* LaunchScreen.storyboard */,
+				70137A8825E81CAF008F6DF7 /* Alert.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -198,6 +211,7 @@
 		704263B725E12AF1007BD4F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				70137A8425E80623008F6DF7 /* Extras */,
 				7065785625E6B39D007D6357 /* Profile */,
 				7065785525E6B395007D6357 /* Messages */,
 				7065785425E6B38E007D6357 /* Match */,
@@ -430,6 +444,7 @@
 				702AC49025E168CF004B21B9 /* Assets.xcassets in Resources */,
 				70635D5625E3772B002A723A /* TopLabelCollectionCell.xib in Resources */,
 				704263A125E122EB007BD4F4 /* Main.storyboard in Resources */,
+				70137A8925E81CAF008F6DF7 /* Alert.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				706879C025E57BCB00A77AEA /* RootTabBarVC.swift in Sources */,
+				70137A8625E8064C008F6DF7 /* MessageAlert.swift in Sources */,
 				706879C325E57BFA00A77AEA /* HomeVC.swift in Sources */,
 				702AC4B525E1A01E004B21B9 /* BottomLinkButton.swift in Sources */,
 				70137A6925E7D32A008F6DF7 /* UserDetails.swift in Sources */,

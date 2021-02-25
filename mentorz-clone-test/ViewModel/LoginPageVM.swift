@@ -24,6 +24,7 @@ class LoginPageVM: NSObject{
     private let secureButton: UIButton = UIButton(type: .custom)
     private let activityIndicator = MDCActivityIndicator()
     private let provider = MoyaProvider<UserAccount>()
+    private let alertService = MessageAlertService()
     init(view delegate: LoginPageView){
         self.loginView = delegate
     }
@@ -82,8 +83,17 @@ class LoginPageVM: NSObject{
         self.loginView.getMainVC().dismiss(animated: false, completion: nil)
     }
     private func errorHandler(error: APIHitError){
-        guard let parentVC = self.loginView as? UIViewController else { return }
-        //alertVC <- will show the error as a popup
+        var alertVc : MessageAlert?
+        if error.errorCode == 404 {
+            alertVc = alertService.alert(title: "Alert", desc: error.errorDescription, buttonTitle: "Sign up"){
+                self.loginView.getMainVC().dismiss(animated: false, completion: nil)
+            }
+        }else{
+            alertVc = alertService.alert(title: "Alert", desc: error.errorDescription, buttonTitle: "OK"){
+                
+            }
+        }
+        self.loginView.getMainVC().present(alertVc!, animated: true, completion: nil)
     }
     
     @objc func didLoginButtonTapped(){
@@ -101,7 +111,7 @@ class LoginPageVM: NSObject{
             
             switch response {
             case.success(let loginResponse):
-                print("Valid user")
+                //print("Valid user")
                 //on login successful
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SideBarMenuVC") as! SideBarMenuVC
