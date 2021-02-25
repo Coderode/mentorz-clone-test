@@ -7,5 +7,5 @@ target 'mentorz-clone-test' do
   pod 'MaterialComponents/TextControls+FilledTextAreas'
   pod 'MaterialComponents/TextControls+FilledTextFields'
   pod 'MaterialComponents/ActivityIndicator'
-
+  pod 'ObjectMapper', '~> 3.5'
 end

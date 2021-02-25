@@ -1,6 +1,6 @@
 import Foundation
+import ObjectMapper
 
-// MARK: - Welcome
 class LoginRequest: Codable {
     let emailID: String
     let phoneNumber: PhoneNumber
@@ -37,21 +37,4 @@ class DeviceInfo: Codable {
     }
 }
 
-// MARK: - PhoneNumber
-class PhoneNumber: Codable {
-    let cc, isoAlpha2_Cc: String
-    let number: Int
-
-    enum CodingKeys: String, CodingKey {
-        case cc
-        case isoAlpha2_Cc = "iso_alpha_2_cc"
-        case number
-    }
-
-    init(cc: String, isoAlpha2_Cc: String, number: Int) {
-        self.cc = cc
-        self.isoAlpha2_Cc = isoAlpha2_Cc
-        self.number = number
-    }
-}
 

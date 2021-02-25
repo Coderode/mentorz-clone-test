@@ -5,22 +5,23 @@ public class SplashViewController: UIViewController {
     @IBOutlet weak var orLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
-    
     @IBOutlet weak var signupButton: ButtonView!
-    
     @IBOutlet weak var loginPageSwitchButton: BottomSwitchButton!
-    
     @IBOutlet weak var bottomLinkButton: BottomLinkButton!
-    
+    @IBOutlet weak var facebookButton: SocialLoginButton!
+    @IBOutlet weak var linkedinButton: SocialLoginButton!
+    @IBOutlet weak var appleButton: SocialLoginButton!
     var imageCollection : [UIImage] = [UIImage(named: "logo-1")!,UIImage(named: "2_img")!,UIImage(named: "3_img")!,UIImage(named: "4_img")!]
     var labelCollection : [String] = ["Expand your horizons","Match with mentors with the expertise you need","Become a mentor and help others grow","Connect and learn"]
+    
+    
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         orLeft.addTopBorderWithColor(color: .white, width: 1)
         orRight.addTopBorderWithColor(color: .white, width: 1)
         orLabel.textColor = .white
-    
+        self.setSocialButtonType()
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         //let width = collectionView.frame.size.width
         //let height = collectionView.frame.size.height
@@ -89,10 +90,13 @@ public class SplashViewController: UIViewController {
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SignupPageVC") as! SignupPageVC
         nextViewController.modalPresentationStyle = .fullScreen
         self.present(nextViewController, animated: false, completion: nil)
-//        weak var pvc = self.presentingViewController
-//        self.dismiss(animated: false, completion: {
-//            pvc?.present(nextViewController, animated: false, completion: nil)
-//        })
+    }
+    
+    
+    func setSocialButtonType(){
+        self.facebookButton.type = .facebook
+        self.linkedinButton.type = .linkedin
+        self.appleButton.type = .apple
     }
     
     

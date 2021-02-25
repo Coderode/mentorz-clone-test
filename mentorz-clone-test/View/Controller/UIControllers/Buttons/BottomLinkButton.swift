@@ -20,7 +20,6 @@ class BottomLinkButton: UIButton {
 }
 
 class LoginSignupBottomLinkButton: UIButton {
-
     override func awakeFromNib() {
         super.awakeFromNib()
         titleLabel!.font = UIFont.systemFont(ofSize: CGFloat(12))
