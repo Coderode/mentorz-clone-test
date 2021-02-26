@@ -109,8 +109,56 @@
             </objects>
             <point key="canvasLocation" x="-1946.376811594203" y="71.651785714285708"/>
         </scene>
+        <!--Activity Indicator-->
+        <scene sceneID="k9A-iL-kXB">
+            <objects>
+                <viewController storyboardIdentifier="ActivityIndicator" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="Qkm-Gu-PoG" customClass="ActivityIndicator" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q0A-uT-LRS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akz-7U-yCC">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circular" translatesAutoresizingMaskIntoConstraints="NO" id="MmQ-Ie-bua">
+                                        <rect key="frame" x="20" y="20" width="110" height="110"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MmQ-Ie-bua" firstAttribute="leading" secondItem="akz-7U-yCC" secondAttribute="leading" constant="20" id="9FI-m2-hBX"/>
+                                    <constraint firstAttribute="width" constant="150" id="Em9-0j-X3Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="MmQ-Ie-bua" secondAttribute="trailing" constant="20" id="eQP-Pn-1jU"/>
+                                    <constraint firstAttribute="bottom" secondItem="MmQ-Ie-bua" secondAttribute="bottom" constant="20" id="evy-KK-k0u"/>
+                                    <constraint firstItem="MmQ-Ie-bua" firstAttribute="top" secondItem="akz-7U-yCC" secondAttribute="top" constant="20" id="fcm-4p-TTB"/>
+                                    <constraint firstAttribute="height" constant="150" id="nRd-p9-sI6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uer-1d-eKo"/>
+                        <color key="backgroundColor" red="0.69497541243654815" green="0.69497541243654815" blue="0.69497541243654815" alpha="0.56837731668009694" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="akz-7U-yCC" firstAttribute="centerX" secondItem="Q0A-uT-LRS" secondAttribute="centerX" id="DNN-hi-KSr"/>
+                            <constraint firstItem="akz-7U-yCC" firstAttribute="centerY" secondItem="Q0A-uT-LRS" secondAttribute="centerY" id="vPT-XV-DXW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circularImage" destination="MmQ-Ie-bua" id="UzW-sa-E8F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBi-Fu-ZDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1128" y="72"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="circular" width="50" height="50"/>
         <image name="loading_data_logo" width="90" height="91"/>
     </resources>
 </document>

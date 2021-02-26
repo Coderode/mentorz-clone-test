@@ -22,9 +22,10 @@ protocol LoginPageView: class {
 class LoginPageVM: NSObject{
     var loginView: LoginPageView
     private let secureButton: UIButton = UIButton(type: .custom)
-    private let activityIndicator = MDCActivityIndicator()
+    private let activityIndicator = ActivityIndicatorService.get()
     private let provider = MoyaProvider<UserAccount>()
     private let alertService = MessageAlertService()
+    
     init(view delegate: LoginPageView){
         self.loginView = delegate
     }
@@ -44,15 +45,6 @@ class LoginPageVM: NSObject{
         self.loginView.getPasswordTextField().trailingView = self.secureButton
         self.loginView.getPasswordTextField().trailingViewMode = .always
         self.loginView.getPasswordTextField().isSecureTextEntry = true
-        
-        //activity indicator
-        activityIndicator.sizeToFit()
-        activityIndicator.indicatorMode = .indeterminate
-        activityIndicator.cycleColors = [#colorLiteral(red: 0.968627451, green: 0.1803921569, blue: 0.2196078431, alpha: 1)]
-        let viewHeight = self.loginView.getMainVC().view.frame.height
-        let viewWidth = self.loginView.getMainVC().view.frame.width
-        activityIndicator.frame = CGRect(x: viewWidth/2 - viewWidth/8, y: viewHeight/2 - viewWidth/8, width: viewWidth/4, height: viewWidth/4)
-        self.loginView.getMainVC().view.addSubview(activityIndicator)
     }
     
     public func setTarget(){
@@ -93,12 +85,10 @@ class LoginPageVM: NSObject{
         let deviceInfo = DeviceInfo(deviceToken: "test_token", deviceType: "ANDROID")
         let userDetails = LoginRequest(emailID: "", phoneNumber: phone, password: self.loginView.getPasswordTextField().text!, deviceInfo: deviceInfo)
         //start activity indicator
-        self.activityIndicator.startAnimating()
-        self.loginView.getMainVC().view.isUserInteractionEnabled = false
+        self.activityIndicator.startIndicator(self.loginView.getMainVC())
         LoginRestManager.validateUser(loginObject: userDetails) { (response) in
             //stop activity indicator
-            self.activityIndicator.stopAnimating()
-            self.loginView.getMainVC().view.isUserInteractionEnabled = true
+            self.activityIndicator.stopIndicator(self.loginView.getMainVC())
             
             switch response {
             case.success(let loginResponse):
@@ -121,11 +111,9 @@ class LoginPageVM: NSObject{
                 self.loginView.getMainVC().dismiss(animated: false, completion: nil)
             }
         }else{
-            alertVc = alertService.alert(title: "Alert", desc: error.errorDescription, buttonTitle: "OK"){
-                
-            }
+            alertVc = alertService.alert(title: "Alert", desc: error.errorDescription, buttonTitle: "OK"){}
         }
-        self.loginView.getMainVC().present(alertVc!, animated: true, completion: nil)
+        alertVc?.show(self.loginView.getMainVC())
     }
     
     private func validateTextFields() -> Bool{
@@ -147,10 +135,8 @@ class LoginPageVM: NSObject{
         }
         
         if error != nil {
-            alertVc = alertService.alert(title: "Message", desc: error!, buttonTitle: "OK"){
-                
-            }
-            self.loginView.getMainVC().present(alertVc!, animated: true, completion: nil)
+            alertVc = alertService.alert(title: "Message", desc: error!, buttonTitle: "OK"){}
+            alertVc?.show(self.loginView.getMainVC())
             return false
         }
         return true

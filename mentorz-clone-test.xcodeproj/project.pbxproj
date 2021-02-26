@@ -11,7 +11,7 @@
 		70137A6625E7D31B008F6DF7 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70137A6525E7D31B008F6DF7 /* PhoneNumber.swift */; };
 		70137A6925E7D32A008F6DF7 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70137A6825E7D32A008F6DF7 /* UserDetails.swift */; };
 		70137A8625E8064C008F6DF7 /* MessageAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70137A8525E8064C008F6DF7 /* MessageAlert.swift */; };
-		70137A8925E81CAF008F6DF7 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70137A8825E81CAF008F6DF7 /* Alert.storyboard */; };
+		70137A8925E81CAF008F6DF7 /* Extras.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70137A8825E81CAF008F6DF7 /* Extras.storyboard */; };
 		702AC49025E168CF004B21B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702AC48F25E168CF004B21B9 /* Assets.xcassets */; };
 		702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49225E17F7A004B21B9 /* ButtonView.swift */; };
 		702AC49725E18ABC004B21B9 /* UIView+Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC49625E18ABC004B21B9 /* UIView+Borders.swift */; };
@@ -47,6 +47,7 @@
 		7075825C25E63D7C00F36F60 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075825B25E63D7C00F36F60 /* LoginResponse.swift */; };
 		707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F2F3325E2B52A0020E026 /* HeadLabel.swift */; };
 		70AC07E125E4255B00B6C6DD /* LoginSignupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */; };
+		70AFF00A25E902BE0043CAFD /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFF00925E902BE0043CAFD /* ActivityIndicator.swift */; };
 		70C398E025E763C400BE0BB3 /* LoginPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398DF25E763C400BE0BB3 /* LoginPageVM.swift */; };
 		70C398E325E7648D00BE0BB3 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398E225E7648D00BE0BB3 /* SocialLoginButton.swift */; };
 		70C398E925E77DBA00BE0BB3 /* LoginRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398E825E77DBA00BE0BB3 /* LoginRestManager.swift */; };
@@ -59,7 +60,7 @@
 		70137A6525E7D31B008F6DF7 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		70137A6825E7D32A008F6DF7 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		70137A8525E8064C008F6DF7 /* MessageAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlert.swift; sourceTree = "<group>"; };
-		70137A8825E81CAF008F6DF7 /* Alert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
+		70137A8825E81CAF008F6DF7 /* Extras.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Extras.storyboard; sourceTree = "<group>"; };
 		702AC48F25E168CF004B21B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		702AC49225E17F7A004B21B9 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		702AC49625E18ABC004B21B9 /* UIView+Borders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Borders.swift"; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		7075825B25E63D7C00F36F60 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		707F2F3325E2B52A0020E026 /* HeadLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLabel.swift; sourceTree = "<group>"; };
 		70AC07E025E4255B00B6C6DD /* LoginSignupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupTextField.swift; sourceTree = "<group>"; };
+		70AFF00925E902BE0043CAFD /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		70C398DF25E763C400BE0BB3 /* LoginPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVM.swift; sourceTree = "<group>"; };
 		70C398E225E7648D00BE0BB3 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
 		70C398E825E77DBA00BE0BB3 /* LoginRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRestManager.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				70137A8525E8064C008F6DF7 /* MessageAlert.swift */,
+				70AFF00925E902BE0043CAFD /* ActivityIndicator.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -203,7 +206,7 @@
 			children = (
 				7042639F25E122EB007BD4F4 /* Main.storyboard */,
 				704263A425E122EC007BD4F4 /* LaunchScreen.storyboard */,
-				70137A8825E81CAF008F6DF7 /* Alert.storyboard */,
+				70137A8825E81CAF008F6DF7 /* Extras.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -444,7 +447,7 @@
 				702AC49025E168CF004B21B9 /* Assets.xcassets in Resources */,
 				70635D5625E3772B002A723A /* TopLabelCollectionCell.xib in Resources */,
 				704263A125E122EB007BD4F4 /* Main.storyboard in Resources */,
-				70137A8925E81CAF008F6DF7 /* Alert.storyboard in Resources */,
+				70137A8925E81CAF008F6DF7 /* Extras.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +502,7 @@
 			files = (
 				706879C025E57BCB00A77AEA /* RootTabBarVC.swift in Sources */,
 				70137A8625E8064C008F6DF7 /* MessageAlert.swift in Sources */,
+				70AFF00A25E902BE0043CAFD /* ActivityIndicator.swift in Sources */,
 				706879C325E57BFA00A77AEA /* HomeVC.swift in Sources */,
 				702AC4B525E1A01E004B21B9 /* BottomLinkButton.swift in Sources */,
 				70137A6925E7D32A008F6DF7 /* UserDetails.swift in Sources */,

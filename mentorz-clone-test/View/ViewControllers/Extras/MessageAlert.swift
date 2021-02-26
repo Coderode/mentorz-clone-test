@@ -24,11 +24,14 @@ class MessageAlert: UIViewController {
         dismiss(animated: true, completion: nil)
         self.buttonAction?()
     }
+    func show(_ sender : UIViewController){
+        sender.present(self, animated: true, completion: nil)
+    }
 }
 
 class MessageAlertService {
     func alert(title: String, desc: String, buttonTitle: String,completion: @escaping () -> Void) -> MessageAlert {
-        let storyBoard = UIStoryboard(name: "Alert", bundle: .main)
+        let storyBoard = UIStoryboard(name: "Extras", bundle: .main)
         let alertVC = storyBoard.instantiateViewController(withIdentifier: "MessageAlert") as! MessageAlert
         alertVC.headTitle = title
         alertVC.desc = desc
