@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,15 +13,15 @@
             <objects>
                 <viewController restorationIdentifier="SplashViewController" storyboardIdentifier="SplashViewController" id="BYZ-38-t0r" userLabel="splashView" customClass="SplashViewController" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_bg" translatesAutoresizingMaskIntoConstraints="NO" id="N1i-E9-Wfd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dvF-PK-za4">
-                                <rect key="frame" x="41.5" y="94" width="331" height="368"/>
+                                <rect key="frame" x="32" y="20" width="256" height="255.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QR0-2Y-kkh">
                                     <size key="itemSize" width="128" height="128"/>
@@ -32,10 +32,10 @@
                                 <cells/>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" defersCurrentPageDisplay="YES" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-8F-9WG">
-                                <rect key="frame" x="136.5" y="486" width="141" height="27.5"/>
+                                <rect key="frame" x="89.5" y="291.5" width="141" height="27.5"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuz-N7-FkS" customClass="ButtonView" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="529.5" width="382" height="57.5"/>
+                                <rect key="frame" x="16" y="335" width="288" height="40"/>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.18431372549019609" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <state key="normal" title="Sign up">
@@ -44,24 +44,24 @@
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="iZC-kO-Gbf">
-                                <rect key="frame" x="16" y="603" width="382" height="70.5"/>
+                                <rect key="frame" x="16" y="391" width="288" height="20.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-Cz-bUn" userLabel="left">
-                                        <rect key="frame" x="0.0" y="35" width="136" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="10" width="89" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" id="b0L-mw-Xm0"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or sign up via" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7J-ud-FY6">
-                                        <rect key="frame" x="139" y="25" width="104.5" height="20.5"/>
+                                        <rect key="frame" x="92" y="0.0" width="104.5" height="20.5"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGX-8p-Vbw" userLabel="right">
-                                        <rect key="frame" x="246.5" y="35" width="135.5" height="0.0"/>
+                                        <rect key="frame" x="199.5" y="10" width="88.5" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" id="7dG-2o-fK9"/>
@@ -69,22 +69,28 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="u7J-ud-FY6" firstAttribute="top" secondItem="iZC-kO-Gbf" secondAttribute="top" id="4Lf-Ti-7wd"/>
+                                    <constraint firstItem="TMe-Cz-bUn" firstAttribute="centerY" secondItem="iZC-kO-Gbf" secondAttribute="centerY" id="5RX-l7-S74"/>
+                                    <constraint firstAttribute="trailing" secondItem="eGX-8p-Vbw" secondAttribute="trailing" id="Cmn-8C-7fj"/>
+                                    <constraint firstAttribute="bottom" secondItem="u7J-ud-FY6" secondAttribute="bottom" id="DZY-k6-Kev"/>
                                     <constraint firstItem="u7J-ud-FY6" firstAttribute="centerX" secondItem="iZC-kO-Gbf" secondAttribute="centerX" id="Jgj-x4-hvK"/>
+                                    <constraint firstItem="eGX-8p-Vbw" firstAttribute="centerY" secondItem="iZC-kO-Gbf" secondAttribute="centerY" id="OUM-DA-ANY"/>
+                                    <constraint firstItem="TMe-Cz-bUn" firstAttribute="leading" secondItem="iZC-kO-Gbf" secondAttribute="leading" id="tdl-4O-Wtv"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Js-Ns-S2x">
-                                <rect key="frame" x="16" y="689.5" width="382" height="62.5"/>
+                                <rect key="frame" x="16" y="427.5" width="288" height="39.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kw-4f-08N" userLabel="facebook" customClass="SocialLoginButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="122" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="39.5"/>
                                         <state key="normal" title="facebook"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RP0-IW-TbS" userLabel="linkedin" customClass="SocialLoginButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="130" y="0.0" width="122" height="62.5"/>
+                                        <rect key="frame" x="98.5" y="0.0" width="91" height="39.5"/>
                                         <state key="normal" title="linkedin"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48x-Ke-JS0" userLabel="apple" customClass="SocialLoginButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="260" y="0.0" width="122" height="62.5"/>
+                                        <rect key="frame" x="197.5" y="0.0" width="90.5" height="39.5"/>
                                         <state key="normal" title="apple"/>
                                     </button>
                                 </subviews>
@@ -94,7 +100,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="8hK-61-v4Q">
-                                <rect key="frame" x="114.5" y="768" width="185.5" height="30"/>
+                                <rect key="frame" x="67.5" y="483" width="185.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already registered?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCt-YR-D8g" customClass="BottomSwitchLabel" customModule="mentorz_clone_test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
@@ -109,16 +115,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="UZI-uI-Gzx">
-                                <rect key="frame" x="8" y="814" width="398" height="24"/>
+                                <rect key="frame" x="8" y="529" width="304" height="24"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By using Mentorz you agree with" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-ZM-5r3" customClass="BottomLinkLabel" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By using Mentorz you agree with" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-ZM-5r3" customClass="BottomLinkLabel" customModule="mentorz_clone_test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lo0-po-LMA" customClass="BottomLinkButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="200.5" y="0.0" width="197.5" height="24"/>
+                                        <rect key="frame" x="153.5" y="0.0" width="150.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <state key="normal" title="terms of service and privacy policy"/>
                                     </button>
@@ -131,30 +137,30 @@
                             <constraint firstAttribute="bottom" secondItem="N1i-E9-Wfd" secondAttribute="bottom" id="2Tx-Sa-7do"/>
                             <constraint firstItem="Yuz-N7-FkS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="53E-Sf-lg9"/>
                             <constraint firstItem="dvF-PK-za4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5s8-lk-9dU"/>
-                            <constraint firstItem="UZI-uI-Gzx" firstAttribute="top" secondItem="8hK-61-v4Q" secondAttribute="bottom" constant="16" id="6BQ-MK-w5R"/>
                             <constraint firstItem="fnx-8F-9WG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6to-nx-M42"/>
-                            <constraint firstItem="0Js-Ns-S2x" firstAttribute="top" secondItem="iZC-kO-Gbf" secondAttribute="bottom" constant="16" id="EGK-1Q-tCA"/>
+                            <constraint firstItem="0Js-Ns-S2x" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iZC-kO-Gbf" secondAttribute="bottom" constant="16" id="EGK-1Q-tCA"/>
                             <constraint firstItem="dvF-PK-za4" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.45" id="Ewq-0h-56j"/>
                             <constraint firstItem="UZI-uI-Gzx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Go2-lE-Ufe"/>
                             <constraint firstItem="iZC-kO-Gbf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KdS-7X-iOK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iZC-kO-Gbf" secondAttribute="trailing" constant="16" id="MeU-KK-L4E"/>
                             <constraint firstItem="N1i-E9-Wfd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NPq-va-XUy"/>
-                            <constraint firstItem="fnx-8F-9WG" firstAttribute="top" secondItem="dvF-PK-za4" secondAttribute="bottom" constant="24" id="RLT-xi-LQu"/>
-                            <constraint firstItem="dvF-PK-za4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="VdK-ej-j5u"/>
+                            <constraint firstItem="fnx-8F-9WG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dvF-PK-za4" secondAttribute="bottom" constant="16" id="RLT-xi-LQu"/>
+                            <constraint firstItem="dvF-PK-za4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="VdK-ej-j5u"/>
                             <constraint firstItem="UZI-uI-Gzx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xe4-pA-Qgk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UZI-uI-Gzx" secondAttribute="bottom" constant="24" id="Y0v-ss-QF4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UZI-uI-Gzx" secondAttribute="bottom" constant="15" id="YsT-HL-STH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yuz-N7-FkS" secondAttribute="trailing" constant="16" id="Zhj-Iu-OVJ"/>
                             <constraint firstItem="dvF-PK-za4" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.8" id="eaj-Aa-ozd"/>
-                            <constraint firstItem="Yuz-N7-FkS" firstAttribute="top" secondItem="fnx-8F-9WG" secondAttribute="bottom" constant="16" id="eky-Qh-9cN"/>
+                            <constraint firstItem="Yuz-N7-FkS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fnx-8F-9WG" secondAttribute="bottom" constant="16" id="eky-Qh-9cN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UZI-uI-Gzx" secondAttribute="trailing" constant="8" id="kYY-Cc-EZh"/>
+                            <constraint firstItem="8hK-61-v4Q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0Js-Ns-S2x" secondAttribute="bottom" constant="16" id="lcr-eO-5MO"/>
                             <constraint firstItem="8hK-61-v4Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nD1-w3-TX4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Js-Ns-S2x" secondAttribute="trailing" constant="16" id="ngL-rD-Dcd"/>
                             <constraint firstItem="Yuz-N7-FkS" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.07" id="nzA-Ou-bfe"/>
                             <constraint firstItem="N1i-E9-Wfd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oIH-6B-BxQ"/>
                             <constraint firstItem="0Js-Ns-S2x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pEx-Jq-qnP"/>
                             <constraint firstItem="8kw-4f-08N" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07" id="sww-lG-5Oq"/>
-                            <constraint firstItem="iZC-kO-Gbf" firstAttribute="top" secondItem="Yuz-N7-FkS" secondAttribute="bottom" constant="16" id="w9j-so-wLm"/>
-                            <constraint firstItem="8hK-61-v4Q" firstAttribute="top" secondItem="0Js-Ns-S2x" secondAttribute="bottom" constant="16" id="wKz-A4-aGf"/>
+                            <constraint firstItem="UZI-uI-Gzx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8hK-61-v4Q" secondAttribute="bottom" constant="16" id="sy3-cJ-iK1"/>
+                            <constraint firstItem="iZC-kO-Gbf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Yuz-N7-FkS" secondAttribute="bottom" constant="16" id="w9j-so-wLm"/>
                             <constraint firstAttribute="trailing" secondItem="N1i-E9-Wfd" secondAttribute="trailing" id="zJP-r4-3kk"/>
                         </constraints>
                     </view>
@@ -181,31 +187,31 @@
             <objects>
                 <viewController restorationIdentifier="ForgotPasswordVC" storyboardIdentifier="ForgotPasswordVC" id="onQ-4S-27f" customClass="ForgotPasswordVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ia8-ap-zow">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zzD-Nf-stO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X9d-l2-raq" customClass="loginSignupLogo" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="83" y="76" width="248" height="65.5"/>
+                                <rect key="frame" x="64" y="32" width="192" height="45.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please provide phone number to receive verification code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-Nd-Byn">
-                                <rect key="frame" x="32" y="205.5" width="350" height="41"/>
+                                <rect key="frame" x="32" y="141.5" width="256" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-rI-xvo">
-                                <rect key="frame" x="16" y="278.5" width="382" height="57"/>
+                                <rect key="frame" x="16" y="214.5" width="288" height="39.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRg-nW-YtW" customClass="MDCFilledTextField">
-                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgA-NQ-N0U" customClass="MDCFilledTextField">
-                                        <rect key="frame" x="80.5" y="0.0" width="301.5" height="57"/>
+                                        <rect key="frame" x="62.5" y="0.0" width="225.5" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
@@ -222,11 +228,11 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prx-V0-WfT" customClass="ButtonView" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="367.5" width="382" height="57.5"/>
+                                <rect key="frame" x="16" y="286" width="288" height="40"/>
                                 <state key="normal" title="Continue"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mtk-Q4-5f6">
-                                <rect key="frame" x="113" y="457" width="188.5" height="30"/>
+                                <rect key="frame" x="66" y="358" width="188.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already registered?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPr-Wa-EE4" customClass="LoginSignupBottomSwitchLabel" customModule="mentorz_clone_test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
@@ -284,27 +290,27 @@
             <objects>
                 <viewController restorationIdentifier="LoginPageVC" storyboardIdentifier="LoginPageVC" id="3xv-PA-0cr" userLabel="loginPage" customClass="LoginPageVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zig-Fu-OeK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Bxm-uj-LKq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mzs-j7-Rke" customClass="loginSignupLogo" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="62" y="87" width="290" height="82"/>
+                                <rect key="frame" x="48" y="32" width="224" height="57"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ehK-h7-EHR">
-                                <rect key="frame" x="16" y="233" width="382" height="57"/>
+                                <rect key="frame" x="16" y="121" width="288" height="39.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daR-Qo-jmF" customClass="MDCFilledTextField">
-                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jEP-e3-qSY" customClass="MDCFilledTextField">
-                                        <rect key="frame" x="80.5" y="0.0" width="301.5" height="57"/>
+                                        <rect key="frame" x="62.5" y="0.0" width="225.5" height="39.5"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -323,41 +329,41 @@
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQ8-Vz-s5I" customClass="MDCFilledTextField">
-                                <rect key="frame" x="16" y="322" width="382" height="57.5"/>
+                                <rect key="frame" x="16" y="184.5" width="288" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8X-HQ-2IB">
-                                <rect key="frame" x="257" y="403.5" width="141" height="33"/>
+                                <rect key="frame" x="163" y="248.5" width="141" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Forgot Password ?">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suM-Tf-uX1" customClass="ButtonView" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="579.5" width="382" height="57"/>
+                                <rect key="frame" x="16" y="324.5" width="288" height="39.5"/>
                                 <state key="normal" title="Login"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1Am-eS-yNl">
-                                <rect key="frame" x="16" y="652.5" width="382" height="20.5"/>
+                                <rect key="frame" x="16" y="380" width="288" height="20.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02D-mT-FHM" userLabel="orLeft">
-                                        <rect key="frame" x="0.0" y="10.5" width="145" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="10.5" width="98" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" id="NDg-3f-ODN"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or login via" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDe-8c-wip">
-                                        <rect key="frame" x="148" y="0.0" width="86" height="20.5"/>
+                                        <rect key="frame" x="101" y="0.0" width="86" height="20.5"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eq2-tG-FcL" userLabel="orRight">
-                                        <rect key="frame" x="237" y="10.5" width="145" height="0.0"/>
+                                        <rect key="frame" x="190" y="10.5" width="98" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" id="o6U-4s-cus"/>
@@ -375,18 +381,18 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QTU-J9-NpH">
-                                <rect key="frame" x="16" y="689" width="382" height="57.5"/>
+                                <rect key="frame" x="16" y="416.5" width="288" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWW-hD-Y5X" customClass="SocialLoginButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="122" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="40"/>
                                         <state key="normal" title="facebook"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kC-XC-MKW" customClass="SocialLoginButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="130" y="0.0" width="122" height="57.5"/>
+                                        <rect key="frame" x="98.5" y="0.0" width="91" height="40"/>
                                         <state key="normal" title="linkedin"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swq-FN-z9z" customClass="SocialLoginButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="260" y="0.0" width="122" height="57.5"/>
+                                        <rect key="frame" x="197.5" y="0.0" width="90.5" height="40"/>
                                         <state key="normal" title="apple"/>
                                     </button>
                                 </subviews>
@@ -396,22 +402,22 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="TeD-hk-5Bq">
-                                <rect key="frame" x="93" y="762.5" width="228" height="29.5"/>
+                                <rect key="frame" x="46" y="472.5" width="228" height="25.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you not registered?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA6-Vp-LXn" customClass="LoginSignupBottomSwitchLabel" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="177" height="29.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiR-1m-i04" customClass="BottomSwitchButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="180" y="0.0" width="48" height="29.5"/>
+                                        <rect key="frame" x="180" y="0.0" width="48" height="25.5"/>
                                         <state key="normal" title="Signup"/>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQC-oP-Lmv" customClass="LoginSignupBottomLinkButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="808" width="382" height="30"/>
+                                <rect key="frame" x="16" y="514" width="288" height="30"/>
                                 <state key="normal" title="By using mentorz you agree with terms of service and privacy policy">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -421,40 +427,45 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mzs-j7-Rke" firstAttribute="height" secondItem="36E-Oq-CDO" secondAttribute="height" multiplier="0.1" id="1wH-5Q-s6B"/>
-                            <constraint firstItem="ehK-h7-EHR" firstAttribute="top" secondItem="mzs-j7-Rke" secondAttribute="bottom" constant="64" id="4U5-P5-ZNN"/>
+                            <constraint firstItem="ehK-h7-EHR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mzs-j7-Rke" secondAttribute="bottom" constant="32" id="4U5-P5-ZNN"/>
                             <constraint firstItem="QQ8-Vz-s5I" firstAttribute="height" secondItem="ehK-h7-EHR" secondAttribute="height" id="535-So-LgI"/>
+                            <constraint firstItem="TeD-hk-5Bq" firstAttribute="top" relation="lessThanOrEqual" secondItem="QTU-J9-NpH" secondAttribute="bottom" constant="24" id="5ir-4p-6uv"/>
+                            <constraint firstItem="QTU-J9-NpH" firstAttribute="top" relation="lessThanOrEqual" secondItem="1Am-eS-yNl" secondAttribute="bottom" constant="24" id="5xE-sg-VYd"/>
                             <constraint firstItem="ehK-h7-EHR" firstAttribute="height" secondItem="36E-Oq-CDO" secondAttribute="height" multiplier="0.07" id="6rE-uf-KBm"/>
                             <constraint firstItem="36E-Oq-CDO" firstAttribute="trailing" secondItem="QQ8-Vz-s5I" secondAttribute="trailing" constant="16" id="9Uh-fe-Uv3"/>
                             <constraint firstItem="36E-Oq-CDO" firstAttribute="trailing" secondItem="suM-Tf-uX1" secondAttribute="trailing" constant="16" id="CEL-3w-Xf9"/>
                             <constraint firstItem="36E-Oq-CDO" firstAttribute="trailing" secondItem="ehK-h7-EHR" secondAttribute="trailing" constant="16" id="ClL-w2-3pn"/>
-                            <constraint firstItem="TeD-hk-5Bq" firstAttribute="top" secondItem="QTU-J9-NpH" secondAttribute="bottom" constant="16" id="D1q-R4-jsv"/>
-                            <constraint firstItem="mzs-j7-Rke" firstAttribute="top" secondItem="36E-Oq-CDO" secondAttribute="top" constant="43" id="Gzq-ij-XJH"/>
+                            <constraint firstItem="TeD-hk-5Bq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QTU-J9-NpH" secondAttribute="bottom" constant="16" id="D1q-R4-jsv"/>
+                            <constraint firstItem="mzs-j7-Rke" firstAttribute="top" relation="greaterThanOrEqual" secondItem="36E-Oq-CDO" secondAttribute="top" constant="32" id="Gzq-ij-XJH"/>
                             <constraint firstAttribute="trailing" secondItem="G8X-HQ-2IB" secondAttribute="trailing" constant="16" id="KEV-fR-uIb"/>
                             <constraint firstItem="mzs-j7-Rke" firstAttribute="width" secondItem="36E-Oq-CDO" secondAttribute="width" multiplier="0.7" id="LvD-Up-HrN"/>
                             <constraint firstItem="fWW-hD-Y5X" firstAttribute="height" secondItem="36E-Oq-CDO" secondAttribute="height" multiplier="0.07" id="Mq4-aB-SY7"/>
                             <constraint firstItem="36E-Oq-CDO" firstAttribute="trailing" secondItem="yQC-oP-Lmv" secondAttribute="trailing" constant="16" id="NEx-9z-NGQ"/>
+                            <constraint firstItem="mzs-j7-Rke" firstAttribute="top" relation="lessThanOrEqual" secondItem="36E-Oq-CDO" secondAttribute="top" priority="900" constant="64" id="O0k-CP-VEg"/>
                             <constraint firstItem="ehK-h7-EHR" firstAttribute="leading" secondItem="36E-Oq-CDO" secondAttribute="leading" constant="16" id="OAe-sT-B43"/>
                             <constraint firstItem="36E-Oq-CDO" firstAttribute="bottom" secondItem="yQC-oP-Lmv" secondAttribute="bottom" constant="24" id="OM6-LW-5LA"/>
                             <constraint firstItem="suM-Tf-uX1" firstAttribute="leading" secondItem="36E-Oq-CDO" secondAttribute="leading" constant="16" id="PX0-An-jL9"/>
-                            <constraint firstItem="1Am-eS-yNl" firstAttribute="top" secondItem="suM-Tf-uX1" secondAttribute="bottom" constant="16" id="QzK-1v-oES"/>
+                            <constraint firstItem="1Am-eS-yNl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="suM-Tf-uX1" secondAttribute="bottom" constant="16" id="QzK-1v-oES"/>
                             <constraint firstItem="36E-Oq-CDO" firstAttribute="trailing" secondItem="QTU-J9-NpH" secondAttribute="trailing" constant="16" id="Vk2-i5-q7Y"/>
                             <constraint firstItem="QTU-J9-NpH" firstAttribute="leading" secondItem="36E-Oq-CDO" secondAttribute="leading" constant="16" id="W8U-eC-LCb"/>
                             <constraint firstItem="QQ8-Vz-s5I" firstAttribute="leading" secondItem="36E-Oq-CDO" secondAttribute="leading" constant="16" id="XWI-eH-u6N"/>
                             <constraint firstItem="mzs-j7-Rke" firstAttribute="centerX" secondItem="Zig-Fu-OeK" secondAttribute="centerX" id="aAd-nP-LCH"/>
+                            <constraint firstItem="1Am-eS-yNl" firstAttribute="top" relation="lessThanOrEqual" secondItem="suM-Tf-uX1" secondAttribute="bottom" constant="24" id="bog-Pu-o1f"/>
                             <constraint firstAttribute="bottom" secondItem="Bxm-uj-LKq" secondAttribute="bottom" id="cl3-vK-HQR"/>
                             <constraint firstItem="1Am-eS-yNl" firstAttribute="leading" secondItem="36E-Oq-CDO" secondAttribute="leading" constant="16" id="cq9-QB-T9g"/>
                             <constraint firstItem="36E-Oq-CDO" firstAttribute="trailing" secondItem="1Am-eS-yNl" secondAttribute="trailing" constant="16" id="gbd-Tb-FcO"/>
-                            <constraint firstItem="suM-Tf-uX1" firstAttribute="top" secondItem="QQ8-Vz-s5I" secondAttribute="bottom" constant="200" id="hdJ-HQ-6FX"/>
+                            <constraint firstItem="suM-Tf-uX1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QQ8-Vz-s5I" secondAttribute="bottom" constant="100" id="hdJ-HQ-6FX"/>
                             <constraint firstItem="TeD-hk-5Bq" firstAttribute="centerX" secondItem="Zig-Fu-OeK" secondAttribute="centerX" id="k4b-aR-gsV"/>
                             <constraint firstItem="Bxm-uj-LKq" firstAttribute="top" secondItem="Zig-Fu-OeK" secondAttribute="top" id="o8K-vS-i7A"/>
                             <constraint firstItem="yQC-oP-Lmv" firstAttribute="leading" secondItem="36E-Oq-CDO" secondAttribute="leading" constant="16" id="ocn-Gn-p2D"/>
                             <constraint firstItem="G8X-HQ-2IB" firstAttribute="top" secondItem="QQ8-Vz-s5I" secondAttribute="bottom" constant="24" id="ryr-KC-nFQ"/>
-                            <constraint firstItem="QTU-J9-NpH" firstAttribute="top" secondItem="1Am-eS-yNl" secondAttribute="bottom" constant="16" id="u4F-Fk-qgM"/>
+                            <constraint firstItem="QTU-J9-NpH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1Am-eS-yNl" secondAttribute="bottom" constant="16" id="u4F-Fk-qgM"/>
                             <constraint firstItem="Bxm-uj-LKq" firstAttribute="leading" secondItem="Zig-Fu-OeK" secondAttribute="leading" id="uQC-CC-vsU"/>
-                            <constraint firstItem="QQ8-Vz-s5I" firstAttribute="top" secondItem="ehK-h7-EHR" secondAttribute="bottom" constant="32" id="yiJ-MZ-j6G"/>
+                            <constraint firstItem="ehK-h7-EHR" firstAttribute="top" relation="lessThanOrEqual" secondItem="mzs-j7-Rke" secondAttribute="bottom" constant="64" id="xiq-DY-xEq"/>
+                            <constraint firstItem="QQ8-Vz-s5I" firstAttribute="top" secondItem="ehK-h7-EHR" secondAttribute="bottom" constant="24" id="yiJ-MZ-j6G"/>
                             <constraint firstAttribute="trailing" secondItem="Bxm-uj-LKq" secondAttribute="trailing" id="z4e-ma-qZ0"/>
                             <constraint firstItem="suM-Tf-uX1" firstAttribute="height" secondItem="36E-Oq-CDO" secondAttribute="height" multiplier="0.07" id="zjo-z0-GGL"/>
-                            <constraint firstItem="yQC-oP-Lmv" firstAttribute="top" secondItem="TeD-hk-5Bq" secondAttribute="bottom" constant="16" id="zlY-ej-MVL"/>
+                            <constraint firstItem="yQC-oP-Lmv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TeD-hk-5Bq" secondAttribute="bottom" constant="16" id="zlY-ej-MVL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -483,14 +494,14 @@
             <objects>
                 <viewController restorationIdentifier="SignupPageVC" storyboardIdentifier="SignupPageVC" id="5XW-7W-4ya" userLabel="signupPage" customClass="SignupPageVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tf6-8W-TFW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6kd-Kz-WZD">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nd-yH-5vM" customClass="BackButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="52" width="49.5" height="65.5"/>
+                                <rect key="frame" x="16" y="8" width="38.5" height="45.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal">
@@ -498,28 +509,28 @@
                                 </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7wY-ul-OKq" customClass="loginSignupLogo" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="83" y="144" width="248" height="82"/>
+                                <rect key="frame" x="64" y="64" width="192" height="57"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Lz-wj-bbf" customClass="MDCFilledTextField">
-                                <rect key="frame" x="24" y="296" width="366" height="57"/>
+                                <rect key="frame" x="16" y="163.5" width="288" height="39.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PRj-XU-fjt" customClass="MDCFilledTextField">
-                                <rect key="frame" x="24" y="377" width="366" height="57.5"/>
+                                <rect key="frame" x="16" y="219" width="288" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IQN-i4-VBd">
-                                <rect key="frame" x="24" y="458.5" width="366" height="57"/>
+                                <rect key="frame" x="16" y="275" width="288" height="39.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tgc-ih-Vog" customClass="MDCFilledTextField">
-                                        <rect key="frame" x="0.0" y="0.0" width="73" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0u-8S-ZOD" customClass="MDCFilledTextField">
-                                        <rect key="frame" x="81" y="0.0" width="285" height="57"/>
+                                        <rect key="frame" x="65.5" y="0.0" width="222.5" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
@@ -535,30 +546,30 @@
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RtJ-V2-UrZ" customClass="MDCFilledTextField">
-                                <rect key="frame" x="24" y="539.5" width="366" height="57.5"/>
+                                <rect key="frame" x="16" y="330.5" width="288" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0D-RL-1es" customClass="MDCFilledTextField">
-                                <rect key="frame" x="24" y="621" width="366" height="57"/>
+                                <rect key="frame" x="16" y="386.5" width="288" height="39.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt7-S3-xnP" customClass="ButtonView" customModule="mentorz_clone_test" customModuleProvider="target">
-                                <rect key="frame" x="24" y="726" width="366" height="57.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt7-S3-xnP" customClass="ButtonView" customModule="mentorz_clone_test" customModuleProvider="target">
+                                <rect key="frame" x="24" y="458" width="272" height="40"/>
                                 <state key="normal" title="Sign up"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6to-BH-0dD">
-                                <rect key="frame" x="110.5" y="807.5" width="193" height="38.5"/>
+                                <rect key="frame" x="63.5" y="522" width="193" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already registered ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlm-z8-2fN" customClass="LoginSignupBottomSwitchLabel" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLE-37-5bR" customClass="BottomSwitchButton" customModule="mentorz_clone_test" customModuleProvider="target">
-                                        <rect key="frame" x="155" y="0.0" width="38" height="38.5"/>
+                                        <rect key="frame" x="155" y="0.0" width="38" height="30"/>
                                         <state key="normal" title="Login"/>
                                     </button>
                                 </subviews>
@@ -570,41 +581,42 @@
                             <constraint firstItem="7wY-ul-OKq" firstAttribute="width" secondItem="bSw-j9-CSi" secondAttribute="width" multiplier="0.6" id="0tS-8O-Iy1"/>
                             <constraint firstItem="6to-BH-0dD" firstAttribute="top" secondItem="Rt7-S3-xnP" secondAttribute="bottom" constant="24" id="29f-Ct-o65"/>
                             <constraint firstAttribute="bottom" secondItem="6kd-Kz-WZD" secondAttribute="bottom" id="4h6-rB-G5U"/>
-                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="RtJ-V2-UrZ" secondAttribute="trailing" constant="24" id="5XP-xB-PLs"/>
-                            <constraint firstItem="E0D-RL-1es" firstAttribute="top" secondItem="RtJ-V2-UrZ" secondAttribute="bottom" constant="24" id="9Gt-h3-Yov"/>
-                            <constraint firstItem="7wY-ul-OKq" firstAttribute="top" secondItem="bSw-j9-CSi" secondAttribute="top" constant="100" id="DHD-OY-Ue4"/>
+                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="RtJ-V2-UrZ" secondAttribute="trailing" constant="16" id="5XP-xB-PLs"/>
+                            <constraint firstItem="E0D-RL-1es" firstAttribute="top" secondItem="RtJ-V2-UrZ" secondAttribute="bottom" constant="16" id="9Gt-h3-Yov"/>
+                            <constraint firstItem="7wY-ul-OKq" firstAttribute="top" secondItem="bSw-j9-CSi" secondAttribute="top" constant="64" id="DHD-OY-Ue4"/>
                             <constraint firstItem="6to-BH-0dD" firstAttribute="centerX" secondItem="Tf6-8W-TFW" secondAttribute="centerX" id="EJ3-vG-g5s"/>
-                            <constraint firstItem="E0D-RL-1es" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="24" id="GmS-22-HoH"/>
-                            <constraint firstItem="3Lz-wj-bbf" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="24" id="Hbz-aI-e84"/>
+                            <constraint firstItem="3Lz-wj-bbf" firstAttribute="top" relation="lessThanOrEqual" secondItem="7wY-ul-OKq" secondAttribute="bottom" constant="50.5" id="F2h-Sf-nEZ"/>
+                            <constraint firstItem="E0D-RL-1es" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="16" id="GmS-22-HoH"/>
+                            <constraint firstItem="3Lz-wj-bbf" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="16" id="Hbz-aI-e84"/>
                             <constraint firstItem="bSw-j9-CSi" firstAttribute="bottom" secondItem="6to-BH-0dD" secondAttribute="bottom" constant="16" id="Hfs-6T-M9V"/>
                             <constraint firstItem="4Nd-yH-5vM" firstAttribute="height" secondItem="bSw-j9-CSi" secondAttribute="height" multiplier="0.08" id="IPN-Zw-vhb"/>
                             <constraint firstItem="E0D-RL-1es" firstAttribute="height" secondItem="3Lz-wj-bbf" secondAttribute="height" id="Kk1-VX-UbH"/>
-                            <constraint firstItem="Rt7-S3-xnP" firstAttribute="top" secondItem="E0D-RL-1es" secondAttribute="bottom" constant="48" id="LcG-2z-lT9"/>
+                            <constraint firstItem="Rt7-S3-xnP" firstAttribute="top" secondItem="E0D-RL-1es" secondAttribute="bottom" constant="32" id="LcG-2z-lT9"/>
                             <constraint firstItem="6kd-Kz-WZD" firstAttribute="leading" secondItem="Tf6-8W-TFW" secondAttribute="leading" id="LkB-wj-UCS"/>
                             <constraint firstItem="4Nd-yH-5vM" firstAttribute="width" secondItem="bSw-j9-CSi" secondAttribute="width" multiplier="0.12" id="MeV-f5-2Cz"/>
                             <constraint firstItem="Rt7-S3-xnP" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="24" id="O0e-Jw-Kzd"/>
-                            <constraint firstItem="PRj-XU-fjt" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="24" id="OSk-QY-CRN"/>
-                            <constraint firstItem="IQN-i4-VBd" firstAttribute="top" secondItem="PRj-XU-fjt" secondAttribute="bottom" constant="24" id="S2f-ic-RBt"/>
+                            <constraint firstItem="PRj-XU-fjt" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="16" id="OSk-QY-CRN"/>
+                            <constraint firstItem="IQN-i4-VBd" firstAttribute="top" secondItem="PRj-XU-fjt" secondAttribute="bottom" constant="16" id="S2f-ic-RBt"/>
                             <constraint firstItem="6kd-Kz-WZD" firstAttribute="top" secondItem="Tf6-8W-TFW" secondAttribute="top" id="SFv-T9-MQU"/>
-                            <constraint firstItem="RtJ-V2-UrZ" firstAttribute="top" secondItem="IQN-i4-VBd" secondAttribute="bottom" constant="24" id="UR3-81-Nab"/>
-                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="PRj-XU-fjt" secondAttribute="trailing" constant="24" id="WKW-mp-qR6"/>
-                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="E0D-RL-1es" secondAttribute="trailing" constant="24" id="XAn-UF-wKs"/>
+                            <constraint firstItem="RtJ-V2-UrZ" firstAttribute="top" secondItem="IQN-i4-VBd" secondAttribute="bottom" constant="16" id="UR3-81-Nab"/>
+                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="PRj-XU-fjt" secondAttribute="trailing" constant="16" id="WKW-mp-qR6"/>
+                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="E0D-RL-1es" secondAttribute="trailing" constant="16" id="XAn-UF-wKs"/>
                             <constraint firstItem="4Nd-yH-5vM" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="16" id="aSO-p9-932"/>
                             <constraint firstItem="3Lz-wj-bbf" firstAttribute="height" secondItem="bSw-j9-CSi" secondAttribute="height" multiplier="0.07" id="aiP-IO-2SI"/>
-                            <constraint firstItem="3Lz-wj-bbf" firstAttribute="top" secondItem="7wY-ul-OKq" secondAttribute="bottom" constant="70" id="bWQ-it-JlJ"/>
-                            <constraint firstItem="IQN-i4-VBd" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="24" id="bcW-o4-Gsd"/>
+                            <constraint firstItem="3Lz-wj-bbf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7wY-ul-OKq" secondAttribute="bottom" constant="32" id="bWQ-it-JlJ"/>
+                            <constraint firstItem="IQN-i4-VBd" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="16" id="bcW-o4-Gsd"/>
                             <constraint firstItem="7wY-ul-OKq" firstAttribute="centerX" secondItem="Tf6-8W-TFW" secondAttribute="centerX" id="eaY-eW-fJk"/>
                             <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="Rt7-S3-xnP" secondAttribute="trailing" constant="24" id="fVl-Zp-fiU"/>
-                            <constraint firstItem="RtJ-V2-UrZ" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="24" id="g9H-H8-cq1"/>
+                            <constraint firstItem="RtJ-V2-UrZ" firstAttribute="leading" secondItem="bSw-j9-CSi" secondAttribute="leading" constant="16" id="g9H-H8-cq1"/>
                             <constraint firstItem="Rt7-S3-xnP" firstAttribute="height" secondItem="3Lz-wj-bbf" secondAttribute="height" id="h5Z-hA-yJ7"/>
-                            <constraint firstItem="PRj-XU-fjt" firstAttribute="top" secondItem="3Lz-wj-bbf" secondAttribute="bottom" constant="24" id="inJ-kl-hdX"/>
+                            <constraint firstItem="PRj-XU-fjt" firstAttribute="top" secondItem="3Lz-wj-bbf" secondAttribute="bottom" constant="16" id="inJ-kl-hdX"/>
                             <constraint firstItem="IQN-i4-VBd" firstAttribute="height" secondItem="3Lz-wj-bbf" secondAttribute="height" id="jim-oU-EY2"/>
-                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="3Lz-wj-bbf" secondAttribute="trailing" constant="24" id="kQM-n4-d3F"/>
+                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="3Lz-wj-bbf" secondAttribute="trailing" constant="16" id="kQM-n4-d3F"/>
                             <constraint firstItem="4Nd-yH-5vM" firstAttribute="top" secondItem="bSw-j9-CSi" secondAttribute="top" constant="8" id="mnR-lz-EZi"/>
                             <constraint firstItem="7wY-ul-OKq" firstAttribute="height" secondItem="bSw-j9-CSi" secondAttribute="height" multiplier="0.1" id="nXL-eg-wUg"/>
                             <constraint firstItem="RtJ-V2-UrZ" firstAttribute="height" secondItem="3Lz-wj-bbf" secondAttribute="height" id="paM-CH-oiU"/>
                             <constraint firstAttribute="trailing" secondItem="6kd-Kz-WZD" secondAttribute="trailing" id="sSx-HT-Mto"/>
-                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="IQN-i4-VBd" secondAttribute="trailing" constant="24" id="uy6-k6-V5z"/>
+                            <constraint firstItem="bSw-j9-CSi" firstAttribute="trailing" secondItem="IQN-i4-VBd" secondAttribute="trailing" constant="16" id="uy6-k6-V5z"/>
                             <constraint firstItem="PRj-XU-fjt" firstAttribute="height" secondItem="3Lz-wj-bbf" secondAttribute="height" id="yGU-nt-5hR"/>
                         </constraints>
                     </view>
@@ -630,23 +642,23 @@
             <objects>
                 <viewController restorationIdentifier="SideBarMenuVC" storyboardIdentifier="SideBarMenuVC" id="qRh-DW-bXq" userLabel="SideBarMenu" customClass="SideBarMenuVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bzH-7g-ExR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjK-el-ruc">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DY5-FT-lAD">
-                                        <rect key="frame" x="0.0" y="0.0" width="724.5" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="568"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmP-c4-Y9X">
-                                                <rect key="frame" x="0.0" y="0.0" width="311" height="896"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="568"/>
                                                 <connections>
                                                     <segue destination="JDw-vh-oZs" kind="embed" id="QDz-wY-dZv"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xl0-DQ-5X6">
-                                                <rect key="frame" x="311" y="0.0" width="413.5" height="896"/>
+                                                <rect key="frame" x="240" y="0.0" width="320" height="568"/>
                                                 <connections>
                                                     <segue destination="wWj-5Q-O8c" kind="embed" id="3xX-PS-dqn"/>
                                                 </connections>
@@ -694,63 +706,63 @@
             <objects>
                 <viewController restorationIdentifier="SideBarVC" storyboardIdentifier="SideBarVC" id="JDw-vh-oZs" userLabel="sideBar" customClass="SideBarVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S1f-S8-k7k">
-                        <rect key="frame" x="0.0" y="0.0" width="311" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blur_bg" translatesAutoresizingMaskIntoConstraints="NO" id="q0G-hM-yyI">
-                                <rect key="frame" x="0.0" y="0.0" width="311" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="568"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHK-OC-n42">
-                                <rect key="frame" x="0.0" y="44" width="311" height="204.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="142"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ge-t0-dWt">
-                                <rect key="frame" x="0.0" y="248.5" width="311" height="613.5"/>
+                                <rect key="frame" x="0.0" y="142" width="240" height="426"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkR-vY-OvC">
-                                        <rect key="frame" x="0.0" y="16" width="311" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="16" width="240" height="42.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Account Settings">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iat-rg-4UN">
-                                        <rect key="frame" x="0.0" y="138.5" width="311" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="101" width="240" height="43"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Rings">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBf-XC-KlN">
-                                        <rect key="frame" x="0.0" y="200" width="311" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="144" width="240" height="42.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Payments">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqx-3B-V9B">
-                                        <rect key="frame" x="0.0" y="261.5" width="311" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="186.5" width="240" height="42.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Notifications">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ham-SR-1Rl">
-                                        <rect key="frame" x="0.0" y="323" width="311" height="61"/>
+                                        <rect key="frame" x="0.0" y="229" width="240" height="42.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Feedback">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqL-Th-58d">
-                                        <rect key="frame" x="0.0" y="384" width="311" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="271.5" width="240" height="42.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Log out">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIS-9U-7WH">
-                                        <rect key="frame" x="0.0" y="77.5" width="311" height="61"/>
+                                        <rect key="frame" x="0.0" y="58.5" width="240" height="42.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Scheduler">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -821,7 +833,7 @@
             <objects>
                 <viewController restorationIdentifier="MatchVC" storyboardIdentifier="MatchVC" id="hlp-Ja-qAQ" userLabel="matches" customClass="MatchVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b5F-OL-JzJ">
-                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="E36-oo-Wun"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -837,7 +849,7 @@
             <objects>
                 <viewController restorationIdentifier="MessagesVC" storyboardIdentifier="MessagesVC" id="jc9-gU-Y0z" userLabel="messages" customClass="MessagesVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJA-8H-jWF">
-                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8l3-JP-1OM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -853,7 +865,7 @@
             <objects>
                 <viewController restorationIdentifier="ProfileVC" storyboardIdentifier="ProfileVC" id="mBt-bv-EaM" customClass="ProfileVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X8I-C7-uEu" userLabel="profile">
-                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="tt9-OU-QkA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -869,7 +881,7 @@
             <objects>
                 <viewController restorationIdentifier="HomeVC" storyboardIdentifier="HomeVC" id="fXu-cL-d2L" userLabel="home" customClass="HomeVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xqp-Gv-D36">
-                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="g9e-Db-li9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
