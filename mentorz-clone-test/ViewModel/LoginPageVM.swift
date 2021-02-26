@@ -82,21 +82,12 @@ class LoginPageVM: NSObject{
     @objc func didSwitchToSignupButtonTapped(){
         self.loginView.getMainVC().dismiss(animated: false, completion: nil)
     }
-    private func errorHandler(error: APIHitError){
-        var alertVc : MessageAlert?
-        if error.errorCode == 404 {
-            alertVc = alertService.alert(title: "Alert", desc: error.errorDescription, buttonTitle: "Sign up"){
-                self.loginView.getMainVC().dismiss(animated: false, completion: nil)
-            }
-        }else{
-            alertVc = alertService.alert(title: "Alert", desc: error.errorDescription, buttonTitle: "OK"){
-                
-            }
-        }
-        self.loginView.getMainVC().present(alertVc!, animated: true, completion: nil)
-    }
+    
     
     @objc func didLoginButtonTapped(){
+        if !self.validateTextFields() {
+            return
+        }
         //getting data from the form input
         let phone = PhoneNumber(cc: "91", isoAlpha2_Cc: "in", number: Int(self.loginView.getPhoneNumberTextField().text!)!)
         let deviceInfo = DeviceInfo(deviceToken: "test_token", deviceType: "ANDROID")
@@ -121,6 +112,48 @@ class LoginPageVM: NSObject{
                 self.errorHandler(error: error)
             }
         }
+    }
+    
+    private func errorHandler(error: APIHitError){
+        var alertVc : MessageAlert?
+        if error.errorCode == 404 {
+            alertVc = alertService.alert(title: "Alert", desc: error.errorDescription, buttonTitle: "Sign up"){
+                self.loginView.getMainVC().dismiss(animated: false, completion: nil)
+            }
+        }else{
+            alertVc = alertService.alert(title: "Alert", desc: error.errorDescription, buttonTitle: "OK"){
+                
+            }
+        }
+        self.loginView.getMainVC().present(alertVc!, animated: true, completion: nil)
+    }
+    
+    private func validateTextFields() -> Bool{
+        let phoneNumberTextField = self.loginView.getPhoneNumberTextField()
+        let passwordTextField = self.loginView.getPasswordTextField()
+        let phoneNumber : Int? = Int(phoneNumberTextField.text ?? "")
+        let password : String? = passwordTextField.text
+        var error : String?
+        var alertVc : MessageAlert?
+        //is empty phonenumber validation
+        //is empty password validation
+        //password length validation
+        if phoneNumber == nil {
+            error = "Please enter email or phone number"
+        }else if password == "" {
+            error = "Please enter a password"
+        }else if password!.count < 6 {
+            error = "Password too short. Minimum 6 characters are allowed"
+        }
+        
+        if error != nil {
+            alertVc = alertService.alert(title: "Message", desc: error!, buttonTitle: "OK"){
+                
+            }
+            self.loginView.getMainVC().present(alertVc!, animated: true, completion: nil)
+            return false
+        }
+        return true
     }
 
 }

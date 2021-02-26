@@ -10,7 +10,7 @@
         <!--messageAlert-->
         <scene sceneID="2pD-en-Z4H">
             <objects>
-                <viewController restorationIdentifier="MessageAlert" storyboardIdentifier="MessageAlert" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="cIq-nQ-RiT" userLabel="messageAlert" customClass="MessageAlert" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="MessageAlert" storyboardIdentifier="MessageAlert" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="cIq-nQ-RiT" userLabel="messageAlert" customClass="MessageAlert" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wKS-mP-0zn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jre-SG-CCi"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.90962087563451777" green="0.90962087563451777" blue="0.90962087563451777" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UfI-46-o0Q" firstAttribute="centerX" secondItem="wKS-mP-0zn" secondAttribute="centerX" id="6nF-dd-5Ga"/>
                             <constraint firstItem="UfI-46-o0Q" firstAttribute="centerY" secondItem="wKS-mP-0zn" secondAttribute="centerY" id="N5l-Wz-h1s"/>
