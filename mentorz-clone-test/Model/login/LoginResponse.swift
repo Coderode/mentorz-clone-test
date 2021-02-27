@@ -1,6 +1,6 @@
 import Foundation
 import ObjectMapper
-
+//on successful login 
 class LoginResponse: NSObject,Mappable {
     var userId : Int?
     var emailId : String?

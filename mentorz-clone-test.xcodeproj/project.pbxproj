@@ -52,6 +52,13 @@
 		70C398E325E7648D00BE0BB3 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398E225E7648D00BE0BB3 /* SocialLoginButton.swift */; };
 		70C398E925E77DBA00BE0BB3 /* LoginRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398E825E77DBA00BE0BB3 /* LoginRestManager.swift */; };
 		70C398FC25E77F3600BE0BB3 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C398EE25E77F3600BE0BB3 /* APIError.swift */; };
+		70FD202325EA61B0008B9199 /* SignupPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD202225EA61B0008B9199 /* SignupPageVM.swift */; };
+		70FD202725EA61DF008B9199 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD202625EA61DF008B9199 /* SignupRequest.swift */; };
+		70FD202A25EA61ED008B9199 /* SignupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD202925EA61ED008B9199 /* SignupResponse.swift */; };
+		70FD202E25EA6223008B9199 /* SignupRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD202D25EA6223008B9199 /* SignupRestManager.swift */; };
+		70FD203125EA8462008B9199 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD203025EA8462008B9199 /* String+Validation.swift */; };
+		70FD203425EA8B52008B9199 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD203325EA8B52008B9199 /* DeviceInfo.swift */; };
+		70FD203725EA8B77008B9199 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD203625EA8B77008B9199 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +111,13 @@
 		70C398E225E7648D00BE0BB3 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
 		70C398E825E77DBA00BE0BB3 /* LoginRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRestManager.swift; sourceTree = "<group>"; };
 		70C398EE25E77F3600BE0BB3 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		70FD202225EA61B0008B9199 /* SignupPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageVM.swift; sourceTree = "<group>"; };
+		70FD202625EA61DF008B9199 /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
+		70FD202925EA61ED008B9199 /* SignupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponse.swift; sourceTree = "<group>"; };
+		70FD202D25EA6223008B9199 /* SignupRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRestManager.swift; sourceTree = "<group>"; };
+		70FD203025EA8462008B9199 /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
+		70FD203325EA8B52008B9199 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		70FD203625EA8B77008B9199 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		C30ABB5E39CF527832988919 /* Pods-mentorz-clone-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorz-clone-test.release.xcconfig"; path = "Target Support Files/Pods-mentorz-clone-test/Pods-mentorz-clone-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +157,7 @@
 				7075825B25E63D7C00F36F60 /* LoginResponse.swift */,
 				70137A6525E7D31B008F6DF7 /* PhoneNumber.swift */,
 				70137A6825E7D32A008F6DF7 /* UserDetails.swift */,
+				70FD203325EA8B52008B9199 /* DeviceInfo.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -197,6 +212,7 @@
 				702AC49625E18ABC004B21B9 /* UIView+Borders.swift */,
 				702AC4A525E19A18004B21B9 /* UILabel+Text.swift */,
 				702AC4A825E19A54004B21B9 /* UIButton+Tittle.swift */,
+				70FD203025EA8462008B9199 /* String+Validation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,6 +360,7 @@
 		7075825325E62DB000F36F60 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				70FD202525EA61C5008B9199 /* signup */,
 				70137A6B25E7D40B008F6DF7 /* login */,
 			);
 			path = Model;
@@ -352,6 +369,7 @@
 		7075826525E67C8200F36F60 /* RESTManager */ = {
 			isa = PBXGroup;
 			children = (
+				70FD202C25EA6206008B9199 /* signup */,
 				70C398EE25E77F3600BE0BB3 /* APIError.swift */,
 				70C398E725E77DA500BE0BB3 /* Login */,
 				7075826625E67CA000F36F60 /* APIProviders */,
@@ -371,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				70C398DF25E763C400BE0BB3 /* LoginPageVM.swift */,
+				70FD202225EA61B0008B9199 /* SignupPageVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -381,6 +400,24 @@
 				70C398E825E77DBA00BE0BB3 /* LoginRestManager.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		70FD202525EA61C5008B9199 /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				70FD202625EA61DF008B9199 /* SignupRequest.swift */,
+				70FD202925EA61ED008B9199 /* SignupResponse.swift */,
+				70FD203625EA8B77008B9199 /* UserProfile.swift */,
+			);
+			path = signup;
+			sourceTree = "<group>";
+		};
+		70FD202C25EA6206008B9199 /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				70FD202D25EA6223008B9199 /* SignupRestManager.swift */,
+			);
+			path = signup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,17 +550,23 @@
 				706879BA25E56FE300A77AEA /* SideBarMenuVC.swift in Sources */,
 				706879B425E4DF7A00A77AEA /* ForgotPasswordVC.swift in Sources */,
 				70635D9625E3D5D6002A723A /* SignupPageVC.swift in Sources */,
+				70FD202725EA61DF008B9199 /* SignupRequest.swift in Sources */,
 				706879B725E50D4000A77AEA /* BackButton.swift in Sources */,
+				70FD203425EA8B52008B9199 /* DeviceInfo.swift in Sources */,
 				702AC4A925E19A54004B21B9 /* UIButton+Tittle.swift in Sources */,
+				70FD203725EA8B77008B9199 /* UserProfile.swift in Sources */,
 				7042639A25E122EB007BD4F4 /* AppDelegate.swift in Sources */,
+				70FD202E25EA6223008B9199 /* SignupRestManager.swift in Sources */,
 				70635D9325E3D5C3002A723A /* LoginPageVC.swift in Sources */,
 				707F2F3425E2B52A0020E026 /* HeadLabel.swift in Sources */,
 				70C398E025E763C400BE0BB3 /* LoginPageVM.swift in Sources */,
 				702AC4A625E19A18004B21B9 /* UILabel+Text.swift in Sources */,
 				706879C925E57C2100A77AEA /* MessagesVC.swift in Sources */,
+				70FD203125EA8462008B9199 /* String+Validation.swift in Sources */,
 				70C398E325E7648D00BE0BB3 /* SocialLoginButton.swift in Sources */,
 				70C398FC25E77F3600BE0BB3 /* APIError.swift in Sources */,
 				702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */,
+				70FD202A25EA61ED008B9199 /* SignupResponse.swift in Sources */,
 				70137A6625E7D31B008F6DF7 /* PhoneNumber.swift in Sources */,
 				7042639C25E122EB007BD4F4 /* SceneDelegate.swift in Sources */,
 				7075825925E63D1500F36F60 /* LoginRequest.swift in Sources */,
@@ -534,6 +577,7 @@
 				706879BD25E57B4600A77AEA /* SideBarVC.swift in Sources */,
 				706879CC25E57C3600A77AEA /* ProfileVC.swift in Sources */,
 				702AC4AC25E19FD5004B21B9 /* BottomSwitchButton.swift in Sources */,
+				70FD202325EA61B0008B9199 /* SignupPageVM.swift in Sources */,
 				706879C625E57C0F00A77AEA /* MatchVC.swift in Sources */,
 				70635D9925E3E07F002A723A /* loginSignupLogo.swift in Sources */,
 				7075825C25E63D7C00F36F60 /* LoginResponse.swift in Sources */,
