@@ -71,11 +71,11 @@
                                 <constraints>
                                     <constraint firstItem="u7J-ud-FY6" firstAttribute="top" secondItem="iZC-kO-Gbf" secondAttribute="top" id="4Lf-Ti-7wd"/>
                                     <constraint firstItem="TMe-Cz-bUn" firstAttribute="centerY" secondItem="iZC-kO-Gbf" secondAttribute="centerY" id="5RX-l7-S74"/>
-                                    <constraint firstAttribute="trailing" secondItem="eGX-8p-Vbw" secondAttribute="trailing" id="Cmn-8C-7fj"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eGX-8p-Vbw" secondAttribute="trailing" id="Cmn-8C-7fj"/>
                                     <constraint firstAttribute="bottom" secondItem="u7J-ud-FY6" secondAttribute="bottom" id="DZY-k6-Kev"/>
                                     <constraint firstItem="u7J-ud-FY6" firstAttribute="centerX" secondItem="iZC-kO-Gbf" secondAttribute="centerX" id="Jgj-x4-hvK"/>
                                     <constraint firstItem="eGX-8p-Vbw" firstAttribute="centerY" secondItem="iZC-kO-Gbf" secondAttribute="centerY" id="OUM-DA-ANY"/>
-                                    <constraint firstItem="TMe-Cz-bUn" firstAttribute="leading" secondItem="iZC-kO-Gbf" secondAttribute="leading" id="tdl-4O-Wtv"/>
+                                    <constraint firstItem="TMe-Cz-bUn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iZC-kO-Gbf" secondAttribute="leading" id="tdl-4O-Wtv"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Js-Ns-S2x">
@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="172" y="68"/>
+            <point key="canvasLocation" x="170.625" y="67.605633802816897"/>
         </scene>
         <!--Forgot PasswordVC-->
         <scene sceneID="oWZ-aS-9JO">
