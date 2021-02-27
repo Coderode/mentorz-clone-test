@@ -16,14 +16,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="138" height="186"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expand your horizons" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyO-J9-iQu">
-                        <rect key="frame" x="0.0" y="145" width="138" height="41"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expand your horizons" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyO-J9-iQu">
+                        <rect key="frame" x="0.0" y="143.5" width="138" height="42.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58V-Bz-oGq">
-                        <rect key="frame" x="32" y="0.0" width="74" height="145"/>
+                        <rect key="frame" x="32" y="0.0" width="74" height="143.5"/>
                     </imageView>
                 </subviews>
             </view>
@@ -36,6 +36,7 @@
                 <constraint firstItem="MyO-J9-iQu" firstAttribute="top" secondItem="58V-Bz-oGq" secondAttribute="bottom" id="di7-VV-S3H"/>
                 <constraint firstItem="MyO-J9-iQu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rDb-PK-ZGb"/>
                 <constraint firstAttribute="trailing" secondItem="MyO-J9-iQu" secondAttribute="trailing" id="yck-RX-9vK"/>
+                <constraint firstItem="MyO-J9-iQu" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.3" id="yji-L2-nOe"/>
             </constraints>
             <size key="customSize" width="138" height="186"/>
             <connections>
