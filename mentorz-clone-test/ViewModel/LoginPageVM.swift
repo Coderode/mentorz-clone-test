@@ -95,7 +95,7 @@ class LoginPageVM: NSObject{
                 //print("Valid user")
                 //on login successful
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SideBarMenuVC") as! SideBarMenuVC
+                let nextViewController = storyBoard.instantiateViewController(withIdentifier: "RootTabBarVC") as! RootTabBarVC
                 nextViewController.modalPresentationStyle = .fullScreen
                 self.loginView.getMainVC().present(nextViewController, animated: false, completion: nil)
             case.failure(let error):

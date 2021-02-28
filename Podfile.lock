@@ -60,6 +60,7 @@ PODS:
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
   - ObjectMapper (3.5.3)
+  - SideMenu (6.5.0)
 
 DEPENDENCIES:
   - IQKeyboardManager
@@ -68,6 +69,7 @@ DEPENDENCIES:
   - "MaterialComponents/TextControls+FilledTextFields"
   - Moya (~> 14.0)
   - ObjectMapper (~> 3.5)
+  - SideMenu
 
 SPEC REPOS:
   trunk:
@@ -79,6 +81,7 @@ SPEC REPOS:
     - MotionInterchange
     - Moya
     - ObjectMapper
+    - SideMenu
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
@@ -89,7 +92,8 @@ SPEC CHECKSUMS:
   MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: e07c4b035cd855157f0b18f006c48d0079d1de3d
+PODFILE CHECKSUM: 0cef2b0e4d408f27f3a857efa14b14976562cddd
 
 COCOAPODS: 1.10.1

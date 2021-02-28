@@ -110,7 +110,7 @@ class SignupPageVM: NSObject{
                 //print("Valid user")
                 //on signup successful
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SideBarMenuVC") as! SideBarMenuVC
+                let nextViewController = storyBoard.instantiateViewController(withIdentifier: "RootTabBarVC") as! RootTabBarVC
                 nextViewController.modalPresentationStyle = .fullScreen
                 weak var pvc = self.signupView.getSignupPageVC.presentingViewController
                 self.signupView.getSignupPageVC.dismiss(animated: false, completion: {
