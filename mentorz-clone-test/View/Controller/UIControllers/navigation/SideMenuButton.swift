@@ -6,19 +6,11 @@
 //
 
 import UIKit
-
-protocol didTapSideMenuButton: class {
-    func didTap()
-}
+import SideMenu
 class SideMenuButton: UIBarButtonItem {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.setUI()
-    }
-    weak var delegate: didTapSideMenuButton?
-    @IBAction internal func didTap(){
-        self.delegate?.didTap()
-        print("action")
     }
     private func setUI(){
         self.image = UIImage(named: "hamburger_Image")
@@ -26,8 +18,4 @@ class SideMenuButton: UIBarButtonItem {
         self.tintColor = .white
     }
 }
-//extension SideMenuButton : didTapSideMenuButton {
-//    func didTap(){
-//        print("action")
-//    }
-//}
+

@@ -14,6 +14,8 @@ class NavigationBar: UINavigationBar {
     }
     
     private func setUI(){
-        self.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.1803921569, blue: 0.2196078431, alpha: 1)
+        self.backgroundColor = UIColor(red: 243/255, green: 45/255, blue: 55/255, alpha: 1)
+        self.barTintColor = UIColor(red: 243/255, green: 45/255, blue: 55/255, alpha: 1)
+        self.tintColor = .white
     }
 }

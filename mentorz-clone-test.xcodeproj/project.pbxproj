@@ -43,6 +43,7 @@
 		706879C625E57C0F00A77AEA /* MatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879C525E57C0F00A77AEA /* MatchVC.swift */; };
 		706879C925E57C2100A77AEA /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879C825E57C2100A77AEA /* MessagesVC.swift */; };
 		706879CC25E57C3600A77AEA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706879CB25E57C3600A77AEA /* ProfileVC.swift */; };
+		7071B5D225ECF963000E6130 /* UITabBar+height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071B5D125ECF963000E6130 /* UITabBar+height.swift */; };
 		7075825525E62DCB00F36F60 /* UserAccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075825425E62DCB00F36F60 /* UserAccountAPI.swift */; };
 		7075825925E63D1500F36F60 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075825825E63D1500F36F60 /* LoginRequest.swift */; };
 		7075825C25E63D7C00F36F60 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075825B25E63D7C00F36F60 /* LoginResponse.swift */; };
@@ -103,6 +104,7 @@
 		706879C525E57C0F00A77AEA /* MatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchVC.swift; sourceTree = "<group>"; };
 		706879C825E57C2100A77AEA /* MessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
 		706879CB25E57C3600A77AEA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		7071B5D125ECF963000E6130 /* UITabBar+height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+height.swift"; sourceTree = "<group>"; };
 		7075825425E62DCB00F36F60 /* UserAccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountAPI.swift; sourceTree = "<group>"; };
 		7075825825E63D1500F36F60 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		7075825B25E63D7C00F36F60 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				702AC4A525E19A18004B21B9 /* UILabel+Text.swift */,
 				702AC4A825E19A54004B21B9 /* UIButton+Tittle.swift */,
 				70FD203025EA8462008B9199 /* String+Validation.swift */,
+				7071B5D125ECF963000E6130 /* UITabBar+height.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 				702AC4A625E19A18004B21B9 /* UILabel+Text.swift in Sources */,
 				706879C925E57C2100A77AEA /* MessagesVC.swift in Sources */,
 				70FD203125EA8462008B9199 /* String+Validation.swift in Sources */,
+				7071B5D225ECF963000E6130 /* UITabBar+height.swift in Sources */,
 				70C398E325E7648D00BE0BB3 /* SocialLoginButton.swift in Sources */,
 				70C398FC25E77F3600BE0BB3 /* APIError.swift in Sources */,
 				702AC49325E17F7A004B21B9 /* ButtonView.swift in Sources */,

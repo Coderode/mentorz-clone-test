@@ -8,7 +8,6 @@
 import UIKit
 
 class SideBarMenuVC: UIViewController {
-    
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var logoutButton: UIButton!
     override func viewDidLoad() {
@@ -17,11 +16,9 @@ class SideBarMenuVC: UIViewController {
         logoutButton.addTarget(self, action: #selector(didLogoutButtonTapped), for: .touchUpInside)
     }
     @objc func didLogoutButtonTapped(){
-        
         //user logout
         //....
-        
         self.dismiss(animated: false, completion: nil)
+        
     }
-    
 }

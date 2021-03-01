@@ -787,7 +787,7 @@
             <objects>
                 <viewController restorationIdentifier="MatchVC" storyboardIdentifier="MatchVC" id="hlp-Ja-qAQ" userLabel="matches" customClass="MatchVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b5F-OL-JzJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="E36-oo-Wun"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -803,14 +803,21 @@
             <objects>
                 <viewController restorationIdentifier="MessagesVC" storyboardIdentifier="MessagesVC" id="jc9-gU-Y0z" userLabel="messages" customClass="MessagesVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJA-8H-jWF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8l3-JP-1OM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Messages" id="SWs-Qo-q9F">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="STv-WQ-8sg" customClass="SideMenuButton" customModule="mentorz_clone_test" customModuleProvider="target"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="STv-WQ-8sg" customClass="SideMenuButton" customModule="mentorz_clone_test" customModuleProvider="target">
+                            <connections>
+                                <action selector="didSideMenuButtonTap:" destination="jc9-gU-Y0z" id="Dac-aR-9Fh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuButton" destination="STv-WQ-8sg" id="FSg-BP-Qfm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FBa-gn-1of" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -821,14 +828,21 @@
             <objects>
                 <viewController restorationIdentifier="ProfileVC" storyboardIdentifier="ProfileVC" id="mBt-bv-EaM" userLabel="profile" customClass="ProfileVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X8I-C7-uEu" userLabel="profile">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="tt9-OU-QkA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="n8P-84-9ge">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="Act-Us-1jz" customClass="SideMenuButton" customModule="mentorz_clone_test" customModuleProvider="target"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Act-Us-1jz" customClass="SideMenuButton" customModule="mentorz_clone_test" customModuleProvider="target">
+                            <connections>
+                                <action selector="didSideMenuButtonTap:" destination="mBt-bv-EaM" id="jbA-xY-zrT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuButton" destination="Act-Us-1jz" id="dcF-lK-jQv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSK-XV-CxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -839,14 +853,26 @@
             <objects>
                 <viewController restorationIdentifier="HomeVC" storyboardIdentifier="HomeVC" id="fXu-cL-d2L" userLabel="home" customClass="HomeVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xqp-Gv-D36">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="g9e-Db-li9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="djO-Us-I6B">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="xvV-9O-fde" customClass="SideMenuButton" customModule="mentorz_clone_test" customModuleProvider="target"/>
+                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="djO-Us-I6B">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="xvV-9O-fde" customClass="SideMenuButton" customModule="mentorz_clone_test" customModuleProvider="target">
+                            <connections>
+                                <action selector="didSideMenuButtonTap:" destination="fXu-cL-d2L" id="u6O-Gc-Xst"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="search" id="Ttk-UY-6Bp"/>
+                            <barButtonItem title="Item" image="plus" catalog="system" id="t1E-ZL-C7C"/>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="navBar" destination="djO-Us-I6B" id="oZv-4W-tel"/>
+                        <outlet property="sideMenuButton" destination="xvV-9O-fde" id="0d9-DF-ufN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9P-ek-qTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -856,7 +882,9 @@
         <scene sceneID="OQh-9e-B4X">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PGa-am-9Yr" userLabel="homeNavigator" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="6fF-wr-wak" userLabel="Home"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_icon" selectedImage="home_icon" id="6fF-wr-wak" userLabel="Home">
+                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pdP-UO-JJx" customClass="NavigationBar" customModule="mentorz_clone_test" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -874,11 +902,15 @@
         <!--Root Tab BarVC-->
         <scene sceneID="ZJD-j8-Z0w">
             <objects>
-                <tabBarController restorationIdentifier="RootTabBarVC" storyboardIdentifier="RootTabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="3L6-WZ-l2w" customClass="RootTabBarVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController restorationIdentifier="RootTabBarVC" storyboardIdentifier="RootTabBarVC" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overFullScreen" id="3L6-WZ-l2w" customClass="RootTabBarVC" customModule="mentorz_clone_test" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Q8-IU-LfB">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="fill" id="9Q8-IU-LfB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="PGa-am-9Yr" kind="relationship" relationship="viewControllers" id="F5F-2g-mVJ"/>
@@ -895,9 +927,9 @@
         <scene sceneID="qPs-2f-ipb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N9m-43-svh" userLabel="matchNavigator" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="pER-qH-2pA" userLabel="Match"/>
+                    <tabBarItem key="tabBarItem" title="Match" image="match" id="pER-qH-2pA" userLabel="Match"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vjo-UK-3ku" customClass="NavigationBar" customModule="mentorz_clone_test" customModuleProvider="target">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="vjo-UK-3ku" customClass="NavigationBar" customModule="mentorz_clone_test" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -914,7 +946,9 @@
         <scene sceneID="w0u-5v-3AJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sqI-ph-eJR" userLabel="MessagesNavigator" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9fF-cP-Ww4" userLabel="Messages"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="messages" id="9fF-cP-Ww4" userLabel="Messages">
+                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ajy-c4-Q0w" customClass="NavigationBar" customModule="mentorz_clone_test" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -933,7 +967,7 @@
         <scene sceneID="LSM-nW-WHg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Mg-DC-1Tm" userLabel="profileNavigator" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oQB-7D-HTV" userLabel="Me"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="me" id="oQB-7D-HTV" userLabel="Me"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZYB-st-BhD" customClass="NavigationBar" customModule="mentorz_clone_test" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -952,12 +986,21 @@
     <resources>
         <image name="bg" width="360" height="640"/>
         <image name="blur_bg" width="320" height="413"/>
+        <image name="home_icon" width="36" height="36"/>
+        <image name="match" width="30" height="30"/>
+        <image name="me" width="30" height="30"/>
+        <image name="messages" width="30" height="30"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="search" width="33.5" height="33.5"/>
         <image name="splash_bg" width="320" height="413"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
